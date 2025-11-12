@@ -1,4 +1,4 @@
-<h1 align="center">🌐 Gtkkala — Personal Portfolio</h1>
+<h1 align="center">🌐 Khalid — Personal Portfolio</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-v18-blue?logo=react" alt="React Badge"/>
