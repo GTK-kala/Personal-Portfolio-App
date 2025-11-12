@@ -61,4 +61,12 @@ My focus areas include React.js, Node.js, and clean UI/UX design.
 
 ---
 
+### ⚙️ Built With
+- ⚛️ React.js (Vite)
+- 🎨 Plain CSS (no frameworks)
+- 💻 Responsive Design (Flexbox + Grid)
+- 🌗 Light & Minimal UI Theme
+
+---
+
 <p align="center">✨ Built by <a href="https://github.com/GTK-kala">Khalid</a> ✨</p>
