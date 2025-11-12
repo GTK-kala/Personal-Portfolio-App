@@ -32,3 +32,33 @@ It is built with **React.js**, powered by **Vite**, and styled with **pure CSS**
 - 🚀 Easy to deploy on Netlify or Vercel  
 
 ---
+
+### 👨‍💻 About Me
+<h3>Hey there, I'm Gtkkala 👋</h3>
+
+I'm a software developer passionate about building modern, scalable, and interactive web applications.
+My focus areas include React.js, Node.js, and clean UI/UX design.
+
+💼 Portfolio: gtkkala-portfolio.netlify.app
+
+💬 Telegram: @gtkkala17
+
+💻 GitHub: @GTK-kala
+
+✉️ Email: gtkkala1110@gmail.com
+
+ ---
+
+### 🪄 Future Enhancements
+
+🌙 Dark / Light mode toggle
+
+🔥 Animated section transitions
+
+📨 Contact form with EmailJS integration
+
+🧭 Project detail modals
+
+---
+
+<p align="center">✨ Built by <a href="https://github.com/GTK-kala">Khalid</a> ✨</p>
