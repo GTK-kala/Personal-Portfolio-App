@@ -1,3 +1,4 @@
+import './Skill.css';
 
 const Skill = () => {
     
