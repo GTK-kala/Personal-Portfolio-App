@@ -1,9 +1,14 @@
 import { Data } from "../../assets/Data/Data";
 import "./Hero.css";
 
-export default function Hero() {
+ const Hero = () => {
   return (
-    <section className="hero" id="home">
+        <section className="hero" id="home">
+      {/* Floating shapes */}
+      <div className="floating-shape shape1"></div>
+      <div className="floating-shape shape2"></div>
+      <div className="floating-shape shape3"></div>
+
       <div className="hero-content">
         <h1 className="hero-title">
           Hi, I'm <span>Khalid</span>
@@ -20,9 +25,11 @@ export default function Hero() {
           </a>
         </div>
       </div>
+
       <div className="hero-image">
         <img src={Data.profileImage} alt="Khalid" />
       </div>
     </section>
   );
 }
+export default Hero
