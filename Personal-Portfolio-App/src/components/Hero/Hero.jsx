@@ -1,9 +1,9 @@
 import { Data } from "../../assets/Data/Data";
 import "./Hero.css";
 
- const Hero = () => {
+const Hero = () => {
   return (
-        <section className="hero" id="home">
+    <section className="hero" id="home">
       {/* Floating shapes */}
       <div className="floating-shape shape"></div>
 
@@ -12,7 +12,8 @@ import "./Hero.css";
           Hi, I'm <span>Khalid</span>
         </h1>
         <p className="hero-subtitle">
-          Frontend Developer | React.js Enthusiast | Creating Modern Web Experiences
+          Frontend Developer | React.js Enthusiast | Creating Modern Web
+          Experiences
         </p>
         <div className="hero-buttons">
           <a href="/resume.pdf" className="btn" download>
@@ -29,5 +30,5 @@ import "./Hero.css";
       </div>
     </section>
   );
-}
-export default Hero
+};
+export default Hero;
