@@ -5,9 +5,7 @@ import "./Hero.css";
   return (
         <section className="hero" id="home">
       {/* Floating shapes */}
-      <div className="floating-shape shape1"></div>
-      <div className="floating-shape shape2"></div>
-      <div className="floating-shape shape3"></div>
+      <div className="floating-shape shape"></div>
 
       <div className="hero-content">
         <h1 className="hero-title">

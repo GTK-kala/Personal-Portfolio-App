@@ -118,31 +118,13 @@
 }
 
 /* Individual shapes */
-.shape1 {
+.shape {
   width: 120px;
   height: 120px;
   background: #4f46e5;
   top: 10%;
   left: 5%;
   animation-duration: 10s;
-}
-
-.shape2 {
-  width: 80px;
-  height: 80px;
-  background: #6366f1;
-  top: 30%;
-  right: 10%;
-  animation-duration: 12s;
-}
-
-.shape3 {
-  width: 100px;
-  height: 100px;
-  background: #4f46e5;
-  bottom: 15%;
-  left: 25%;
-  animation-duration: 15s;
 }
 
 /* Floating animation */
