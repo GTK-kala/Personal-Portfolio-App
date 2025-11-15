@@ -1,65 +1,56 @@
 import { useEffect, useRef } from "react";
 import "./Skill.css";
 
-const Skills = () => {
-  const skillRef = useRef(null);
+export default function Skills() {
+  const sectionRef = useRef(null);
 
   useEffect(() => {
-    const scrollAnim = () => {
-      const section = skillRef.current;
-      if (!section) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) sectionRef.current.classList.add("show");
+      },
+      { threshold: 0.2 }
+    );
 
-      const top = section.getBoundingClientRect().top;
-      const trigger = window.innerHeight * 0.8;
-
-      if (top < trigger) {
-        section.classList.add("reveal");
-      }
-    };
-
-    window.addEventListener("scroll", scrollAnim);
-    return () => window.removeEventListener("scroll", scrollAnim);
+    observer.observe(sectionRef.current);
   }, []);
 
   const skills = [
-    { name: "HTML", level: 95 },
-    { name: "CSS", level: 90 },
-    { name: "JavaScript", level: 88 },
-    { name: "React", level: 85 },
-    { name: "Node.js", level: 82 },
-    { name: "MySQL", level: 80 },
-    { name: "Tailwind CSS", level: 90 },
-    { name: "Next.js", level: 75 },
-    { name: "Git & GitHub", level: 92 },
-    { name: "Postman", level: 88 },
-    { name: "VS Code", level: 97 },
+    { name: "HTML", icon: "🌐" },
+    { name: "CSS", icon: "🎨" },
+    { name: "JavaScript", icon: "⚡" },
+    { name: "React", icon: "⚛️" },
+    { name: "Node.js", icon: "🟢" },
+    { name: "MySQL", icon: "🗄️" },
+    { name: "Tailwind", icon: "🌪️" },
+    { name: "Next.js", icon: "⬛" },
+    { name: "Git", icon: "🔧" },
+    { name: "GitHub", icon: "🐙" },
+    { name: "MySQL", icon: "🗄️" },
+    { name: "Postman", icon: "📬" },
+    { name: "JavaScript", icon: "⚡" },
+    { name: "VS Code", icon: "💻" },
+    { name: "HTML", icon: "🌐" }
   ];
 
   return (
-    <section className="skills-section" id="skills" ref={skillRef}>
-      <h2 className="section-title">My Skills</h2>
-      <p className="section-subtitle">
-        A quick visual overview of the technologies I use to build modern web
-        applications.
+    <section className="skill-wrapper" id="skills" ref={sectionRef}>
+      <h2 className="skill-title">My Skills</h2>
+      <p className="skill-subtitle">
+        Tools & technologies I use to craft modern digital experiences.
       </p>
 
-      <div className="skills-grid">
-        {skills.map((skill, idx) => (
-          <div className="skill-card" key={idx}>
-            <div className="skill-info">
-              <span>{skill.name}</span>
-              <span>{skill.level}%</span>
-            </div>
-            <div className="skill-bar">
-              <div
-                className="skill-progress"
-                style={{ "--progress": `${skill.level}%` }}
-              ></div>
-            </div>
+      <div className="skill-grid">
+        {skills.map((skill, i) => (
+          <div
+            className="skill-card"
+            style={{ animationDelay: `${i * 0.1}s` }}
+            key={i} >
+            <span className="skill-icon">{skill.icon}</span>
+            <h3>{skill.name}</h3>
           </div>
         ))}
       </div>
     </section>
   );
-};
-export default Skills;
+}
