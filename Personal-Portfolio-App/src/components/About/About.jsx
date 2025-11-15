@@ -42,11 +42,23 @@ const About = () => {
         <div className="about-cards">
           <div className="card">
             <h3>Experience</h3>
-            <p>1+ Years</p>
+            <p>2+ Years</p>
           </div>
           <div className="card">
             <h3>Projects</h3>
-            <p>10+ Completed</p>
+            <p>100+ Completed</p>
+          </div>
+          <div className="card">
+            <h3>Clients</h3>
+            <p>120+ Clients</p>
+          </div>
+          <div className="card">
+            <h3>Workers</h3>
+            <p>5+ Partner</p>
+          </div>
+          <div className="card">
+            <h3>Hours Of Support</h3>
+            <p>3000+ Completed</p>
           </div>
         </div>
       </div>
