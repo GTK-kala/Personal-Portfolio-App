@@ -171,6 +171,22 @@
     max-width: 300px;
   }
 }
+@media (max-width: 480px) {
+  .hero-image img {
+    max-width: 100%;
+  }
+  .floating-shape{
+    position: absolute;
+    z-index: 100;
+  }
+  .shape{
+    width: 90px;
+    height: 90px;
+    top: 55%;
+    left: 15%;
+    animation-duration: 12s;
+  }
+}
 
 /* ---------------------- */
 /* ANIMATIONS */
