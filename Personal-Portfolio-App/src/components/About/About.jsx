@@ -1,20 +1,7 @@
+import { skill } from "../../assets/Data/Data";
 import "./About.css";
 
 const About = () => {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "Tailwind",
-    "MySQL",
-    "Postman",
-    "Git",
-    "GitHub",
-    "VSCode",
-    "Next.js",
-  ];
 
   return (
     <section className="about" id="about">
@@ -30,7 +17,7 @@ const About = () => {
 
           <h3 className="skills-title">My Skills</h3>
           <div className="skills-list">
-            {skills.map((skill, index) => (
+            {skill.map((skill, index) => (
               <span key={index} className="skill">
                 {skill}
               </span>

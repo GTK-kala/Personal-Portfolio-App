@@ -1,3 +1,4 @@
+import { skills } from "../../assets/Data/Data";
 import { useEffect, useRef } from "react";
 import "./Skill.css";
 
@@ -14,24 +15,6 @@ export default function Skills() {
 
     observer.observe(sectionRef.current);
   }, []);
-
-  const skills = [
-    { name: "HTML", icon: "🌐" },
-    { name: "CSS", icon: "🎨" },
-    { name: "JavaScript", icon: "⚡" },
-    { name: "React", icon: "⚛️" },
-    { name: "Node.js", icon: "🟢" },
-    { name: "MySQL", icon: "🗄️" },
-    { name: "Tailwind", icon: "🌪️" },
-    { name: "Next.js", icon: "⬛" },
-    { name: "Git", icon: "🔧" },
-    { name: "GitHub", icon: "🐙" },
-    { name: "MySQL", icon: "🗄️" },
-    { name: "Postman", icon: "📬" },
-    { name: "JavaScript", icon: "⚡" },
-    { name: "VS Code", icon: "💻" },
-    { name: "HTML", icon: "🌐" }
-  ];
 
   return (
     <section className="skill-wrapper" id="skills" ref={sectionRef}>
