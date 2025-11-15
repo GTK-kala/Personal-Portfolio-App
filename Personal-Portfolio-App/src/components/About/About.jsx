@@ -2,7 +2,6 @@ import { skill } from "../../assets/Data/Data";
 import "./About.css";
 
 const About = () => {
-
   return (
     <section className="about" id="about">
       <div className="about-container">

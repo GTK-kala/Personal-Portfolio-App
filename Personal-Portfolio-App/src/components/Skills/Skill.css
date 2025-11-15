@@ -5,6 +5,7 @@
   transform: translateY(60px);
   transition: 1s ease;
   background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  border-radius: 10px;
 }
 
 .skill-wrapper.show {

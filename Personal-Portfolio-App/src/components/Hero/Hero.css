@@ -175,11 +175,11 @@
   .hero-image img {
     max-width: 100%;
   }
-  .floating-shape{
+  .floating-shape {
     position: absolute;
     z-index: 100;
   }
-  .shape{
+  .shape {
     width: 90px;
     height: 90px;
     top: 55%;

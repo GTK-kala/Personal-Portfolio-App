@@ -46,25 +46,25 @@ export const projects = [
       title: "Full-Stack Notes App",
       desc: "A secure notes application with JWT auth, CRUD operations and clean UI.",
       tech: "React • Node.js • MySQL",
-      link: "#",
+      link: "https://github.com/GTK-kala/Secure-notes-App.git",
     },
     {
       title: "Weather App",
       desc: "Real-time weather forecasting app using API integration.",
       tech: "React • Weather API",
-      link: "#",
+      link: "https://github.com/GTK-kala/React-Weather-App.git",
     },
     {
       title: "Full-Stack Food Delivery App",
       desc: "Food ordering system with cart, checkout and admin panel.",
       tech: "React • Node.js • MongoDB",
-      link: "#",
+      link: "https://github.com/GTK-kala/React-Food-Delivery-App.git",
     },
     {
       title: "Task Manager App",
       desc: "Full-stack task organizer with status tracking and analytics.",
       tech: "React • Node.js • MySQL",
-      link: "#",
+      link: "https://github.com/GTK-kala/Task-manager-App.git",
     },
     {
       title: "E-commerce Store",
@@ -76,7 +76,7 @@ export const projects = [
       title: "Portfolio Website",
       desc: "Animated personal portfolio with React and CSS.",
       tech: "React • CSS",
-      link: "#",
+      link: "https://github.com/GTK-kala/Personal-Portfolio-App.git",
     },
   ];
 

@@ -1,12 +1,13 @@
 import { projects } from "../../assets/Data/Data";
 import "./Project.css";
 
-export default function Projects() {
-
+const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h2 className="projects-title">Projects</h2>
-      <p className="projects-sub">Some of my best work that shows my skills and creativity.</p>
+      <p className="projects-sub">
+        Some of my best work that shows my skills and creativity.
+      </p>
 
       <div className="project-grid">
         {projects.map((p, i) => (
@@ -27,4 +28,5 @@ export default function Projects() {
       </div>
     </section>
   );
-}
+};
+export default Projects;
