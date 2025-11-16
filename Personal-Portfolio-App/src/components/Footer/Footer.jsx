@@ -4,19 +4,18 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-wave"></div>
-
-      <div className="footer-container">
-        <h2 className="footer-title">Khalid</h2>
-        <p className="footer-sub">
-          Full-Stack Developer • Crafting Web Experiences
+      <div className="footer-inner">
+        <h3 className="footer-logo">Kal</h3>
+        <p className="footer-text">
+          Full-stack developer crafting modern web experiences.
         </p>
 
+        {/* Social Icons */}
         <div className="footer-socials">
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             <FaLinkedin />
           </a>
           <a href="mailto:your-email@gmail.com">
@@ -25,7 +24,8 @@ const Footer = () => {
         </div>
 
         <p className="footer-copy">
-          © {new Date().getFullYear()} All Rights Reserved
+          © {new Date().getFullYear()} — Designed & Built by{" "}
+          <span>Khalid</span>
         </p>
       </div>
     </footer>
