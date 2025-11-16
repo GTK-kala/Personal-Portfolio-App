@@ -1,3 +1,136 @@
-.Contact{
-    color: aqua;
+/* ============================== */
+/* CONTACT SECTION                */
+/* ============================== */
+.contact {
+  padding: 120px 8% 100px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.contact-sub {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  margin-bottom: 60px;
+}
+
+/* ============================== */
+/* CONTAINER & FORM               */
+/* ============================== */
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 580px;
+  background: #ffffffcc;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 25px;
+  backdrop-filter: blur(12px);
+  animation: fadeUp 1s ease forwards;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+/* Fade Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================== */
+/* INPUT BOX STYLE                */
+/* ============================== */
+.input-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 14px 14px 14px 16px;
+  font-size: 1rem;
+  border: 2px solid #e6e6e6;
+  border-radius: 12px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s ease;
+  resize: none;
+}
+
+.input-box textarea {
+  height: 130px;
+}
+
+/* Label animation */
+.input-box label {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  font-size: 1rem;
+  color: #777;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  border-color: #4aa8ff;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box textarea:focus ~ label,
+.input-box textarea:valid ~ label {
+  top: -8px;
+  left: 12px;
+  padding: 0 6px;
+  background: white;
+  font-size: 0.8rem;
+  color: #4aa8ff;
+}
+
+/* ============================== */
+/* BUTTON                         */
+/* ============================== */
+.send-btn {
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #4aa8ff, #7b5bff);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.35s ease;
+  box-shadow: 0px 6px 16px rgba(123, 91, 255, 0.25);
+}
+
+.send-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 12px 22px rgba(123, 91, 255, 0.35);
+}
+
+/* ============================== */
+/* RESPONSIVENESS                 */
+/* ============================== */
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
 }
