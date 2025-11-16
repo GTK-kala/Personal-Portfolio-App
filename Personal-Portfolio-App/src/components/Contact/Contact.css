@@ -154,13 +154,13 @@
 }
 
 @media (max-width: 400px) {
-  .contact-section{
+  .contact-section {
     height: 80vh;
   }
-  .contact-container{
+  .contact-container {
     gap: 0rem;
   }
-  .contact-form{
+  .contact-form {
     position: relative;
     top: -6rem;
     align-items: center;
@@ -169,7 +169,7 @@
   .contact-form textarea {
     width: 90%;
   }
-  .contact-btn{
+  .contact-btn {
     width: 102%;
   }
 }
