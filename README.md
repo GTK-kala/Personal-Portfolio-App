@@ -27,7 +27,7 @@ It is built with **React.js**, powered by **Vite**, and styled with **pure CSS**
 ### ✨ Features
 - 🎯 Smooth scrolling single-page layout  
 - 🧩 Component-based structure  
-- 🌈 Modern and responsive design  
+- 👨‍💻 Modern and responsive design  
 - 💻 Fully mobile-friendly  
 - 🚀 Easy to deploy on Netlify or Vercel  
 
