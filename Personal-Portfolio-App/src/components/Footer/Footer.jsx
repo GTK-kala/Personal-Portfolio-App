@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-// import "./Footer.css";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-grid">
         
         <div className="footer-section">
-          <h3 className="footer-title">Kal</h3>
+          <h3 className="footer-title">Khalid</h3>
           <p className="footer-text">
             Full-stack developer crafting modern and scalable web solutions.
           </p>
