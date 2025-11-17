@@ -1,3 +1,4 @@
+import BackToTop from '../components/BackToTop/BackToTop';
 import Project from '../components/Projects/Project';
 import Contact from '../components/Contact/Contact';
 import NavBar from '../components/NavBar/NavBar';
@@ -16,6 +17,7 @@ const Home = () => {
      <Project />
      <Contact />
      <Footer />
+     <BackToTop />
     </>
   )
 }
