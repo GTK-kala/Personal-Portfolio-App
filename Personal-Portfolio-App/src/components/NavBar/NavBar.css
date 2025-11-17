@@ -1,6 +1,6 @@
-/* ---------------------- */
-/* HEADER CONTAINER */
-/* ---------------------- */
+/* ======================== */
+/* HEADER (Balanced Spacing) */
+/* ======================== */
 
 .header {
   width: 100%;
@@ -8,97 +8,97 @@
   top: 0;
   z-index: 1000;
 
-  /* Soft glass background */
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 
-  /* Subtle gradient for premium feel */
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.6),
-    rgba(230, 230, 255, 0.4)
+    rgba(255, 255, 255, 0.55),
+    rgba(235, 235, 255, 0.35)
   );
-  border-radius: 10px;
-  margin-bottom: 3px;
 
+  border-radius: 10px;
+  margin-bottom: 10px; /* reduced & balanced */
   transition: background 0.3s ease;
 }
 
+/* ======================== */
+/* NAV BAR CONTAINER         */
+/* ======================== */
+
 .navbar {
   max-width: 1250px;
-  height: 75px;
+  height: 70px; /* reduced for better balance */
   margin: auto;
-  padding: 0 8%;
+  padding: 0 6%; /* reduced side padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* ---------------------- */
+/* ======================== */
 /* LOGO */
-/* ---------------------- */
+/* ======================== */
 
 .logo {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.4rem, 1.8vw, 1.9rem);
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #4f46e5;
-  text-transform: uppercase;
 
-  /* Smooth appearance animation */
-  animation: fadeDown 0.6s ease forwards;
+  animation: fadeDown 0.55s ease forwards;
   cursor: pointer;
 }
 
-/* ---------------------- */
+/* ======================== */
 /* NAV LINKS */
-/* ---------------------- */
+/* ======================== */
 
 .nav-links {
   display: flex;
-  gap: clamp(20px, 3vw, 45px);
+  gap: clamp(18px, 2.8vw, 38px); /* slightly reduced gap */
   list-style: none;
 }
 
 .nav-links li a {
   text-decoration: none;
-  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   font-weight: 500;
   color: #1f2937;
-  transition: 0.3s ease;
   position: relative;
+  transition: 0.28s ease;
 }
 
-/* smoother underline animation */
+/* Smooth premium underline */
 .nav-links li a::after {
   content: "";
   position: absolute;
   width: 0%;
   height: 3px;
-  bottom: -5px;
+  bottom: -6px;
   left: 0;
   background: #6366f1;
   border-radius: 50px;
-  transition: 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #4f46e5;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .nav-links li a:hover::after {
   width: 100%;
 }
 
-/* ---------------------- */
+/* ======================== */
 /* HAMBURGER MENU */
-/* ---------------------- */
+/* ======================== */
 
 .hamburger {
-  width: 32px;
-  height: 24px;
+  width: 30px;
+  height: 22px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -114,18 +114,18 @@
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
 }
 .hamburger.active span:nth-child(2) {
   opacity: 0;
 }
 .hamburger.active span:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }
 
-/* ---------------------- */
-/* MOBILE NAV */
-/* ---------------------- */
+/* ======================== */
+/* MOBILE MENU */
+/* ======================== */
 
 @media (max-width: 900px) {
   .hamburger {
@@ -134,40 +134,43 @@
 
   .nav-links {
     position: fixed;
-    top: 60px;
+    top: 54.5px;
     right: 0;
     width: 100%;
     height: 0;
     overflow: hidden;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    gap: 26px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    gap: 22px; /* reduced spacing */
     text-align: center;
+
     padding: 0;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
-    transition: height 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: height 0.35s ease;
   }
 
   .nav-links.open {
-    height: 225px;
-    padding-top: 25px;
+    height: 210px; /* tighter, cleaner */
+    padding-top: 22px;
   }
 
   .nav-links li a {
-    font-size: 1.2rem;
-    animation: fadeUp 0.5s ease;
+    font-size: 1.15rem;
+    animation: fadeUp 0.45s ease;
   }
 }
 
-/* ---------------------- */
+/* ======================== */
 /* ANIMATIONS */
-/* ---------------------- */
+/* ======================== */
 
 @keyframes fadeDown {
   from {
     opacity: 0;
-    transform: translateY(-14px);
+    transform: translateY(-12px);
   }
   to {
     opacity: 1;
@@ -178,7 +181,7 @@
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
