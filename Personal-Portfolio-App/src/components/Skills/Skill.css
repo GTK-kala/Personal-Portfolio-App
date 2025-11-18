@@ -74,6 +74,8 @@
     gap: 0px;
   }
   .skill-card {
+    position: relative;
+    left: -8px;
     width: 50%;
     height: 47%;
     display: flex;

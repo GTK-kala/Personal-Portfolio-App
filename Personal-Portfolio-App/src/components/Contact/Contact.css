@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  /* background: linear-gradient(135deg, #eef2ff, #1f77cf); */
   border-radius: 10px;
 }
 
@@ -53,7 +54,7 @@
   border-radius: 50%;
   position: absolute;
   opacity: 0.7;
-  animation: float 4s ease-in-out infinite;
+  animation: float 2.4s ease-in-out infinite;
 }
 
 .c1 {
@@ -71,7 +72,7 @@
 .c3 {
   background: #10b981;
   left: 120px;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 
 @keyframes float {
@@ -172,14 +173,19 @@
 
 @media (max-width: 480px) {
   .contact-section {
-    height: 80vh;
+    padding: 25px 20px 0px 20px;
+    height: 74vh;
   }
   .contact-container {
     gap: 0rem;
   }
+  .contact-animation{
+    position: relative;
+    top: 2rem;
+  }
   .contact-form {
     position: relative;
-    top: -6rem;
+    top: -3rem;
     align-items: center;
   }
   .contact-form input,
@@ -187,6 +193,6 @@
     width: 90%;
   }
   .contact-btn {
-    width: 102%;
+    width: 103%;
   }
 }
