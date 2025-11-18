@@ -8,7 +8,7 @@ const NavBar = () => {
   const closeMenu = () => setOpen(false);
 
   return (
-    <header className="header">
+    <header className="header" id="Home">
       <nav className="navbar">
         <div className="logo">Khalid</div>
 

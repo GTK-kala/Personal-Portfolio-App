@@ -5,9 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start; /* top-align content */
-  padding: 50px 6%; /* balanced spacing */
-  min-height: unset; /* natural height, no extra space */
+  align-items: flex-start;
+  padding: 50px 6%;
+  padding-bottom: 70px;
+  min-height: unset;
   background: linear-gradient(135deg, #eef2ff, #e0e7ff);
   position: relative;
   overflow: hidden;
@@ -20,7 +21,7 @@
   animation: fadeInLeft 1s ease forwards;
   position: relative;
   z-index: 1;
-  margin-bottom: 0; /* remove extra bottom space */
+  margin-bottom: 0;
 }
 
 .hero-title {
@@ -77,19 +78,26 @@
 
 .hero-image {
   flex: 1 1 400px;
-  max-width: 500px;
+  max-width: 400px;
+  height: 450px;      
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* top-align image */
+  align-items: center;
+  border-radius: 20px;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 400px;
-  height: auto; /* natural height */
+  height: 100%;
+  object-fit: cover;      
+  object-position: center -255px; 
   border-radius: 20px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   transition: transform 0.4s ease;
+}
+
+
+.hero-image img {
+  filter: contrast(1.05) saturate(1.08);
 }
 
 .hero-image img:hover {
@@ -190,6 +198,23 @@
     top: 2%;
     left: 15%;
     animation-duration: 12s;
+  }
+  .hero-image {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+    object-position: center -180px;
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
   }
 }
 
