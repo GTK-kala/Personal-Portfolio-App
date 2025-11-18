@@ -1,6 +1,7 @@
 /* Overall Section */
 .contact-section {
-  padding: 5rem 1.5rem;
+  padding: 15px 20px 40px 20px;
+  margin-bottom: 0px;
   display: flex;
   justify-content: center;
   background: linear-gradient(135deg, #eef2ff, #f8fafc);
@@ -132,29 +133,44 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .contact-section{
+    padding: 0px ;
+  }
   .contact-container {
     flex-direction: column;
     text-align: center;
+    gap: 0;
   }
 
   .contact-animation {
     margin-left: auto;
     margin-right: auto;
   }
+  .contact-form{
+    position: relative;
+    top: -5rem;
+    align-items: center;
+  }
 
   .contact-text {
     margin-left: auto;
     margin-right: auto;
   }
+  .contact-btn{
+    width: 104%;
+  }
 }
 
 @media (max-width: 500px) {
+  .contact-section{
+    padding: 15px 20px 0px 20px;
+  }
   .contact-title {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .contact-section {
     height: 80vh;
   }
