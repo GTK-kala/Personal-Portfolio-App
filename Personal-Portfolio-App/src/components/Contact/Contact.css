@@ -174,7 +174,7 @@
 @media (max-width: 480px) {
   .contact-section {
     padding: 25px 20px 0px 20px;
-    height: 74vh;
+    height: 80vh;
   }
   .contact-container {
     gap: 0rem;
@@ -185,7 +185,7 @@
   }
   .contact-form {
     position: relative;
-    top: -3rem;
+    top: -1rem;
     align-items: center;
   }
   .contact-form input,
