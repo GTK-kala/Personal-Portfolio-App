@@ -1,29 +1,30 @@
-/* ---------------------- */
-/* HERO SECTION */
+/* ======================= */
+/* HERO SECTION - FINAL */
+/* ======================= */
 .hero {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start; /* keep hero-content top-aligned */
-  padding: 70px 6%; /* reduced padding for balanced spacing */
+  align-items: flex-start; /* top-align content */
+  padding: 50px 6%; /* balanced spacing */
+  min-height: unset; /* natural height, no extra space */
   background: linear-gradient(135deg, #eef2ff, #e0e7ff);
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
 
-/* ---------------------- */
-/* HERO CONTENT */
 .hero-content {
   flex: 1 1 500px;
   max-width: 600px;
   animation: fadeInLeft 1s ease forwards;
   position: relative;
   z-index: 1;
+  margin-bottom: 0; /* remove extra bottom space */
 }
 
 .hero-title {
-  font-size: clamp(2.2rem, 5.5vw, 3.8rem); /* slightly smaller, readable */
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
   font-weight: 700;
   color: #4f46e5;
   margin-bottom: 18px;
@@ -36,23 +37,21 @@
 .hero-subtitle {
   font-size: clamp(0.95rem, 1.5vw, 1.25rem);
   color: #1f2937;
-  margin-bottom: 25px; /* balanced spacing */
+  margin-bottom: 20px;
   line-height: 1.6;
 }
 
-/* ---------------------- */
-/* HERO BUTTONS */
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* slightly tighter */
-  margin-bottom: 10px;
+  gap: 16px;
+  margin-bottom: 0;
 }
 
 .hero-buttons .btn {
   background: #4f46e5;
   color: #fff;
-  padding: 10px 24px; /* slightly reduced padding */
+  padding: 10px 24px;
   border-radius: 8px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -76,24 +75,20 @@
   transform: translateY(-2px);
 }
 
-/* ---------------------- */
-/* HERO IMAGE */
 .hero-image {
   flex: 1 1 400px;
   max-width: 500px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  animation: fadeInRight 1s ease forwards;
-  position: relative;
-  z-index: 1;
+  align-items: flex-start; /* top-align image */
 }
 
 .hero-image img {
   width: 100%;
   max-width: 400px;
+  height: auto; /* natural height */
   border-radius: 20px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12); /* slightly softer shadow */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   transition: transform 0.4s ease;
 }
 
@@ -101,8 +96,7 @@
   transform: scale(1.05);
 }
 
-/* ---------------------- */
-/* FLOATING SHAPES */
+/* Floating shapes */
 .floating-shape {
   position: absolute;
   border-radius: 50%;
@@ -112,15 +106,14 @@
 }
 
 .shape {
-  width: 110px; /* slightly smaller shapes */
+  width: 110px;
   height: 110px;
   background: #4f46e5;
   top: 10%;
-  left: 5%;
+  left: 3%;
   animation-duration: 10s;
 }
 
-/* Floating animation */
 @keyframes float {
   0%,
   100% {
@@ -131,19 +124,19 @@
   }
 }
 
-/* ---------------------- */
+/* ======================= */
 /* RESPONSIVE MOBILE */
 @media (max-width: 900px) {
   .hero {
-    flex-direction: column-reverse;
+    flex-direction: row;
     text-align: center;
-    padding: 60px 5%;
-    gap: 30px;
-    align-items: center;
+    padding: 40px 5%;
+    gap: 20px;
+    align-items: flex-start; /* top-align stacked content */
   }
 
   .hero-content {
-    max-width: 100%;
+    width: 100%;
   }
 
   .hero-buttons {
@@ -158,29 +151,50 @@
     font-size: clamp(0.9rem, 2.5vw, 1.15rem);
   }
 
-  .hero-image img {
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-image img {
-    max-width: 100%;
+  .hero-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
   .floating-shape {
     z-index: 100;
   }
+
   .shape {
     width: 80px;
     height: 80px;
-    top: 55%;
+    top: 5%;
+    left: 23%;
+    animation-duration: 12s;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .floating-shape {
+    z-index: 100;
+  }
+
+  .shape {
+    width: 70px;
+    height: 70px;
+    top: 2%;
     left: 15%;
     animation-duration: 12s;
   }
 }
 
-/* ---------------------- */
-/* ANIMATIONS */
+/* ======================= */
+/* HERO ANIMATIONS */
 @keyframes fadeInLeft {
   from {
     opacity: 0;
