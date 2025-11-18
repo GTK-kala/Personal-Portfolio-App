@@ -23,23 +23,69 @@ export const skill = [
   ];
 
 
-export const skills = [
-    { name: "HTML", icon: "🌐" },
-    { name: "CSS", icon: "🎨" },
-    { name: "JavaScript", icon: "⚡" },
-    { name: "React", icon: "⚛️" },
-    { name: "Node.js", icon: "🟢" },
-    { name: "MySQL", icon: "🗄️" },
-    { name: "Tailwind", icon: "🌪️" },
-    { name: "Next.js", icon: "⬛" },
-    { name: "Git", icon: "🔧" },
-    { name: "GitHub", icon: "🐙" },
-    { name: "MySQL", icon: "🗄️" },
-    { name: "Postman", icon: "📬" },
-    { name: "JavaScript", icon: "⚡" },
-    { name: "VS Code", icon: "💻" },
-    { name: "HTML", icon: "🌐" }
-  ];
+export const techIcons = [
+  {
+    name: "HTML",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    name: "CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  },
+  {
+    name: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    name: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    name: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+  },
+  {
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+  },
+  {
+    name: "Postman",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+  },
+  {
+    name: "VS Code",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+  },
+  {
+    name: "PHP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    name: "Express.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+  }
+];
+
 
 export const projects = [
     {

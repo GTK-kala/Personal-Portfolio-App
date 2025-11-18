@@ -1,4 +1,4 @@
-import { skills } from "../../assets/Data/Data";
+import { techIcons } from "../../assets/Data/Data";
 import { useEffect, useRef } from "react";
 import "./Skill.css";
 
@@ -24,12 +24,12 @@ const Skill = () => {
       </p>
 
       <div className="skill-grid">
-        {skills.map((skill, i) => (
+        {techIcons.map((skill, i) => (
           <div
             className="skill-card"
             style={{ animationDelay: `${i * 0.1}s` }}
             key={i} >
-            <span className="skill-icon">{skill.icon}</span>
+            <span className="skill-icon"><img className="skill-img" src={skill.icon} alt={skill.name} /></span>
             <h3>{skill.name}</h3>
           </div>
         ))}

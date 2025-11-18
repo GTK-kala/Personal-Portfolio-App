@@ -1,6 +1,6 @@
 .skill-wrapper {
   margin-top: 2px;
-  padding: 4px 5%;
+  padding: 4px 4%;
   padding-bottom: 40px;
   text-align: center;
   transition: 1s ease;
@@ -42,13 +42,13 @@
   transition: 0.4s ease;
   opacity: 0;
   transform: translateY(40px);
-  animation: fadeUp 0.8s forwards ease;
+  transition: all 0.5s ease-in-out;
+  animation: fadeUp 0.8s ease-in-out forwards;
   cursor: pointer;
 }
 
 .skill-card:hover {
-  transform:  scale(1.05);
-  box-shadow: 0 15px 50px rgba(93, 135, 255, 0.25);
+  box-shadow: 0 15px 50px rgba(1, 4, 11, 0.25);
 }
 
 .skill-icon {
@@ -56,11 +56,25 @@
   display: block;
   margin-bottom: 12px;
 }
+.skill-img{
+  width: 40px;
+  height: 40px;
+}
 
 .skill-card h3 {
   font-weight: 600;
   font-size: 1.1rem;
   color: #1e293b;
+}
+@media (max-width: 480px) {
+  .skill-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-card {
+    width: 70%;
+  }
 }
 
 @keyframes fadeUp {
