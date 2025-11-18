@@ -2,7 +2,7 @@ import { skills } from "../../assets/Data/Data";
 import { useEffect, useRef } from "react";
 import "./Skill.css";
 
-export default function Skills() {
+const Skill = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -37,3 +37,4 @@ export default function Skills() {
     </section>
   );
 }
+export default Skill;

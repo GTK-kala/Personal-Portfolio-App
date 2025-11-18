@@ -1,9 +1,10 @@
 /* Overall Section */
 .contact-section {
   padding: 5rem 1.5rem;
-  background: var(--bg-primary, #f9f9f9);
   display: flex;
   justify-content: center;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  border-radius: 10px;
 }
 
 .contact-container {
