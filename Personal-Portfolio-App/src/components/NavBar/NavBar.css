@@ -162,6 +162,18 @@
     animation: fadeUp 0.45s ease;
   }
 }
+@media (max-width: 400px) {
+  .header{
+    margin-top: 10px;
+  }
+  .hamburger {
+    width: 26px;
+    height: 20px;
+  }
+  .nav-links.open {
+    height: 240px; /* adjusted for smaller screens */
+  }
+}
 
 /* ======================== */
 /* ANIMATIONS */
