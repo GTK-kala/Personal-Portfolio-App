@@ -86,18 +86,22 @@
 }
 @media (max-width: 400px) {
   .skill-grid {
+    padding: 0px;
+    margin-left: 10px;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
   .skill-card {
-    width: 45%;
-    height: 40%;
+    width: 52%;
+    height: 30%;
     gap: 0;
   }
   .skill-card .skill-icon .skill-img {
     width: 60%;
   }
   .skill-card h3 {
+      position: relative;
+    top: -10px;
     font-size: 0.8rem;
   }
 }
