@@ -198,7 +198,9 @@
 }
 @media (max-width: 400px) {
   .contact-section {
- 
+    margin-top: 0px;
+    height: 370px;
+    padding-bottom: 0px;
   }
   .contact-form {
     display: none;
