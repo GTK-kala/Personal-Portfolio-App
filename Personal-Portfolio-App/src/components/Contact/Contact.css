@@ -196,3 +196,12 @@
     width: 103%;
   }
 }
+@media (max-width: 400px) {
+     .contact-section{
+      background-color: #000705;
+      padding-bottom: 0px;
+     }
+    .contact-form{
+      display: none;
+    }
+}
