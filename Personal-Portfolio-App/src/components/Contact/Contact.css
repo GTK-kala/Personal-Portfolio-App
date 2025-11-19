@@ -198,10 +198,7 @@
 }
 @media (max-width: 400px) {
   .contact-section {
-    margin-top: 0px;
-    background-color: #10b981;
-    height: 350px;
-    padding-bottom: 0px;
+ 
   }
   .contact-form {
     display: none;
