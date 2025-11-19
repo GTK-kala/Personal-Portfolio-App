@@ -90,7 +90,7 @@
     gap: 5px;
   }
   .skill-card {
-    width: 60%;
+    width: 45%;
     height: 40%;
     gap: 0;
   }
@@ -98,7 +98,7 @@
     width: 60%;
   }
   .skill-card h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
