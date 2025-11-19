@@ -90,15 +90,15 @@
     gap: 5px;
   }
   .skill-card {
-    width: 40%;
-    height: 30%;
+    width: 60%;
+    height: 40%;
     gap: 0;
   }
   .skill-card .skill-icon .skill-img {
     width: 60%;
   }
   .skill-card h3 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 
