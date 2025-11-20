@@ -175,6 +175,46 @@
     animation-duration: 12s;
   }
 }
+@media (max-width: 500px) {
+      .hero {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .floating-shape {
+    z-index: 100;
+  }
+
+  .shape {
+    width: 70px;
+    height: 70px;
+    top: 3%;
+    left: 25%;
+    animation-duration: 12s;
+  }
+  .hero-image {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+    object-position: center -100px;
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+}
 
 @media (max-width: 480px) {
   .hero {
