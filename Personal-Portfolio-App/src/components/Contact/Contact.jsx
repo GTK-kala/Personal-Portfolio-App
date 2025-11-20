@@ -1,10 +1,10 @@
+import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import emailjs from "emailjs-com";
 import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const [name , setName ] = useState('');
   const [email , setEmail ] = useState('');
   const [message , setMessage ] = useState('');
