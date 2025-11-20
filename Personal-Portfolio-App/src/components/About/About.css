@@ -163,9 +163,49 @@
   }
 }
 @media (max-width: 400px) {
-  .skills-list{
+  .skills-list {
     position: relative;
-    left: -15px;
+    left: -20px;
+  }
+  .skills-list span {
+    padding: 17px;
+    border-radius: 15px;
+  }
+
+  .about-cards {
+    flex: 1 1 350px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeInRight 1s ease forwards;
+  }
+
+  .card {
+    background: #fff;
+    flex: 1 1 100px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4f46e5;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 1rem;
+    color: #1f2937;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   }
 }
 
