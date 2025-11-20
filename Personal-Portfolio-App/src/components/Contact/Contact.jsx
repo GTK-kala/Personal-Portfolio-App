@@ -1,6 +1,14 @@
+import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const [value , setValue] = useState({});
+  const [name , setName ] = useState('');
+
+  const  HandelSubmit = async (e) => {
+     e.preventDefault();
+     
+  }
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
@@ -18,10 +26,10 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
+        <form className="contact-form" onSubmit={() =>HandelSubmit(e)}>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
           <button type="submit" className="contact-btn">
             Send Message
           </button>
