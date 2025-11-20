@@ -1,4 +1,5 @@
-import toast from "react-hot-toast"
+import toast from "react-hot-toast";
+import emailjs from "emailjs-com";
 import { useState } from "react";
 import "./Contact.css";
 
@@ -15,8 +16,21 @@ const Contact = () => {
       email,
       message
      }
-    toast.success("hello"); 
-    console.log(value) 
+    try {
+      const result = await emailjs.send(
+       "service_dga4h43",
+       "template_fyt1f2g",
+       value, 
+       "Ek-zK_lz8--m_fd-8"
+      )
+      console.log(result.text);
+      toast.success("Message sent successfully!")
+    } catch (error) {
+      toast.error("Failed to send message!");
+    }
+    setName('');
+    setEmail('');
+    setMessage('');
   }
   return (
     <section id="contact" className="contact-section">
