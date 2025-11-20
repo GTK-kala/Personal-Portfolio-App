@@ -169,9 +169,7 @@
     height: 20px;
   }
   .nav-links.open {
-    position: relative;
-    top: -4px;
-    height: 205px;
+    height: 207px;
   }
 }
 
