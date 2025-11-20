@@ -169,7 +169,7 @@
     height: 20px;
   }
   .nav-links.open {
-    height: 220px; /* adjusted for smaller screens */
+    height: 200px; /* adjusted for smaller screens */
   }
 }
 

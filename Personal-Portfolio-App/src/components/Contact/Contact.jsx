@@ -1,13 +1,22 @@
+import toast from "react-hot-toast"
 import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
-  const [value , setValue] = useState({});
+  const [loading, setLoading] = useState(false);
   const [name , setName ] = useState('');
+  const [email , setEmail ] = useState('');
+  const [message , setMessage ] = useState('');
 
   const  HandelSubmit = async (e) => {
      e.preventDefault();
-     
+     const value = {
+      name,
+      email,
+      message
+     }
+    toast.success("hello"); 
+    console.log(value) 
   }
   return (
     <section id="contact" className="contact-section">
@@ -26,10 +35,10 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="contact-form" onSubmit={() =>HandelSubmit(e)}>
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
+        <form className="contact-form" onSubmit={(e) =>HandelSubmit(e)}>
+          <input type="text" name="name" value={name} placeholder="Your Name" onChange={(e) => setName(e.target.value)} required />
+          <input type="email" name="email" value={email} placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} required />
+          <textarea name="message" value={message} placeholder="Your Message" onChange={(e) => setMessage(e.target.value)} required></textarea>
           <button type="submit" className="contact-btn">
             Send Message
           </button>
