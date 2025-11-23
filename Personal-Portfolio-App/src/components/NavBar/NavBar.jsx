@@ -11,50 +11,50 @@ const NavBar = () => {
   const closeMenu = () => setOpen(false);
 
   return (
-    <header className={theme ? "header" : "headers"} id="Home">
+    <header className={theme ? "header_light" : "header_night"} id="Home">
       <nav className="navbar">
-        <div className="logo">Khalid</div>
+        <div className={theme ? "logo_light" : "logo_night"}>Khalid</div>
 
         {/* Hamburger Icon */}
         <div
           className={`hamburger ${open ? "active" : ""}`}
           onClick={toggleMenu}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className={theme ? "line_light" : "line_night"}></span>
+          <span className={theme ? "line_light" : "line_night"}></span>
+          <span className={theme ? "line_light" : "line_night"}></span>
         </div>
 
         {/* Dark and Light Mood */}
 
         <button  onClick={() => HandleTheme()} className="theme-toggle-btn">
-          {theme ? <Sun /> : <Moon />}
+          {theme ? <Sun /> : <Moon className="moon"/>}
         </button>
 
         {/* Nav Links */}
         <ul className={`nav-links ${open ? "open" : ""}`}>
           <li>
-            <a href="#home" onClick={closeMenu}>
+            <a href="#home" onClick={closeMenu} className={theme ? "link_light" : "link_night"}>
               Home
             </a>
           </li>
           <li>
-            <a href="#about" onClick={closeMenu}>
+            <a href="#about" onClick={closeMenu} className={theme ? "link_light" : "link_night"}>
               About
             </a>
           </li>
           <li>
-            <a href="#skills" onClick={closeMenu}>
+            <a href="#skills" onClick={closeMenu} className={theme ? "link_light" : "link_night"}>
               Skills
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={closeMenu}>
+            <a href="#projects" onClick={closeMenu} className={theme ? "link_light" : "link_night"}>
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={closeMenu}>
+            <a href="#contact" onClick={closeMenu} className={theme ? "link_light" : "link_night"}>
               Contact
             </a>
           </li>
