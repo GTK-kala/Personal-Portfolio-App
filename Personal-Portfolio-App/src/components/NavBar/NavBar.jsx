@@ -1,15 +1,17 @@
+import { useState , useContext} from "react";
+import { ContextApi } from "../../context/ContextProvider";
 import { Sun, Moon } from "lucide-react";
-import { useState } from "react";
 import "./NavBar.css";
 
 const NavBar = () => {
+  const { theme , HandleTheme } = useContext(ContextApi);
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => setOpen(!open);
   const closeMenu = () => setOpen(false);
 
   return (
-    <header className="header" id="Home">
+    <header className={theme ? "header" : "headers"} id="Home">
       <nav className="navbar">
         <div className="logo">Khalid</div>
 
@@ -22,6 +24,12 @@ const NavBar = () => {
           <span></span>
           <span></span>
         </div>
+
+        {/* Dark and Light Mood */}
+
+        <button  onClick={() => HandleTheme()} className="theme-toggle-btn">
+          {theme ? <Sun /> : <Moon />}
+        </button>
 
         {/* Nav Links */}
         <ul className={`nav-links ${open ? "open" : ""}`}>
