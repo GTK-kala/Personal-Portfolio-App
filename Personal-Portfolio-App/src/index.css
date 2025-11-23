@@ -5,3 +5,6 @@ html {
 :root {
   scroll-padding-top: 70px;
 }
+body{
+  background: #111;
+}
