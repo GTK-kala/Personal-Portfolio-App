@@ -1,29 +1,54 @@
-.skill-wrapper {
+.skill-wrapper_light {
   margin-top: 2px;
   padding: 4px 4%;
   padding-bottom: 40px;
   text-align: center;
   transition: 1s ease;
+  margin-bottom: 5px;
   background: linear-gradient(135deg, #eef2ff, #f8fafc);
   border-radius: 10px;
 }
 
-.skill-wrapper.show {
+.skill-wrapper_night {
+  margin-top: 2px;
+  padding: 4px 4%;
+  padding-bottom: 40px;
+  text-align: center;
+  transition: 1s ease;
+  background: #2a2a2a;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.skill-wrapper_light.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-.skill-title {
+.skill-title_light {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   color: #1e293b;
   margin-bottom: 8px;
 }
 
-.skill-subtitle {
+.skill-title_night {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.skill-subtitle_light {
   color: #64748b;
   font-size: 1.1rem;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-subtitle_night {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 .skill-grid {
@@ -61,11 +86,17 @@
   height: 40px;
 }
 
-.skill-card h3 {
+.skill-card .icons-name_light {
   font-weight: 600;
   font-size: 1.1rem;
   color: #1e293b;
 }
+.skill-card .icons-name_night {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
 @media (max-width: 480px) {
   .skill-grid {
     display: grid;
@@ -85,10 +116,16 @@
   }
 }
 @media (max-width: 400px) {
-  .skill-wrapper{
+  .skill-wrapper_light {
     background-color: #1e293b;
     padding: 2px 2%;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
+  }
+
+  .skill-wrapper_night {
+    background-color: #2a2a2a;
+    padding: 2px 2%;
+    margin-bottom: 5px;
   }
   .skill-grid {
     padding: 0px;
@@ -107,7 +144,12 @@
     top: 5px;
     width: 63%;
   }
-  .skill-card h3 {
+  .skill-card .icons-name_light {
+    position: relative;
+    top: -10px;
+    font-size: 0.8rem;
+  }
+  .skill-card .icons-name_night {
     position: relative;
     top: -10px;
     font-size: 0.8rem;

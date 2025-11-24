@@ -19,9 +19,9 @@ const Skill = () => {
   }, []);
 
   return (
-    <section className="skill-wrapper" id="skills" ref={sectionRef}>
-      <h2 className="skill-title">My Skills</h2>
-      <p className="skill-subtitle">
+    <section className={theme ? "skill-wrapper_light" : "skill-wrapper_night"} id="skills" ref={sectionRef}>
+      <h2 className={theme ? "skill-title_light" : "skill-title_night"}>My Skills</h2>
+      <p className={theme ? "skill-subtitle_light" : "skill-subtitle_night"}>
         Tools & technologies I use to craft modern digital experiences.
       </p>
 
@@ -32,7 +32,7 @@ const Skill = () => {
             style={{ animationDelay: `${i * 0.1}s` }}
             key={i} >
             <span className="skill-icon"><img className="skill-img" src={skill.icon} alt={skill.name} /></span>
-            <h3>{skill.name}</h3>
+            <h3 className={theme ? "icons-name_light" : "icons-name_night"}>{skill.name}</h3>
           </div>
         ))}
       </div>
