@@ -198,7 +198,7 @@
 @media (max-width: 400px) {
   .skills-list {
     position: relative;
-    left: -18px;
+    left: -16px;
   }
   .skills-list span {
     padding: 17px;
@@ -214,6 +214,9 @@
   }
 
   .card {
+    position: relative;
+    left: -15px;
+    height: 10%;
     background: #fff;
     flex: 1 1 60px;
     padding: 25px 20px;
