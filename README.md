@@ -14,7 +14,7 @@
 ---
 
 ## 🚀 Live Demo
-🔗 **[View My Portfolio](https://gtkkala-portfolio.netlify.app)**  
+🔗 **[View My Portfolio](https://personal-portfolio-app-theta.vercel.app/)**  
 *(Replace the link with your actual deployment URL once ready.)*
 
 ---
