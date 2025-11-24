@@ -1,22 +1,10 @@
-.skill-wrapper_light {
+.skill-wrapper {
   margin-top: 2px;
   padding: 4px 4%;
   padding-bottom: 40px;
   text-align: center;
   transition: 1s ease;
-  margin-bottom: 5px;
   background: linear-gradient(135deg, #eef2ff, #f8fafc);
-  border-radius: 10px;
-}
-
-.skill-wrapper_night {
-  margin-top: 2px;
-  padding: 4px 4%;
-  padding-bottom: 40px;
-  text-align: center;
-  transition: 1s ease;
-  background: #2a2a2a;
-  margin-bottom: 5px;
   border-radius: 10px;
 }
 
@@ -25,30 +13,17 @@
   transform: translateY(0);
 }
 
-.skill-title_light {
+.skill-title {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   color: #1e293b;
   margin-bottom: 8px;
 }
 
-.skill-title_night {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 8px;
-}
-
-.skill-subtitle_light {
+.skill-subtitle {
   color: #64748b;
   font-size: 1.1rem;
   margin-bottom: 50px;
-}
-
-.skill-subtitle_night {
-  color: #fff;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
 }
 
 .skill-grid {
@@ -86,16 +61,10 @@
   height: 40px;
 }
 
-.skill-card .icons-name_light {
+.skill-card h3 {
   font-weight: 600;
   font-size: 1.1rem;
   color: #1e293b;
-}
-
-.skill-card .icons-name_night {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #cdcccc;
 }
 @media (max-width: 480px) {
   .skill-grid {
@@ -129,7 +98,7 @@
   }
   .skill-card {
     margin-bottom: 0px;
-    width: 50%;
+    width: 52%;
     height: 30%;
     gap: 0;
   }
