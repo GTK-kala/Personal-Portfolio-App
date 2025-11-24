@@ -28,7 +28,7 @@ const Skill = () => {
       <div className="skill-grid">
         {techIcons.map((skill, i) => (
           <div
-            className="skill-card"
+            className={theme ? "skill-card_light" : "skill-card_night"}
             style={{ animationDelay: `${i * 0.1}s` }}
             key={i} >
             <span className="skill-icon"><img className="skill-img" src={skill.icon} alt={skill.name} /></span>

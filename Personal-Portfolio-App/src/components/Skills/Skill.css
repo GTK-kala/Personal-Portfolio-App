@@ -57,7 +57,7 @@
   gap: 25px;
 }
 
-.skill-card {
+.skill-card_light {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(16px);
   padding: 30px 20px;
@@ -72,7 +72,27 @@
   cursor: pointer;
 }
 
-.skill-card:hover {
+.skill-card_night {
+  background: transparent;
+  backdrop-filter: blur(16px);
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.5s ease-in-out;
+  animation: fadeUp 0.8s ease-in-out forwards;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.skill-card_light:hover {
+  box-shadow: 0 15px 50px rgba(1, 4, 11, 0.25);
+}
+
+.skill-card_night:hover {
   box-shadow: 0 15px 50px rgba(1, 4, 11, 0.25);
 }
 
@@ -86,12 +106,13 @@
   height: 40px;
 }
 
-.skill-card .icons-name_light {
+.skill-card_light .icons-name_light {
   font-weight: 600;
   font-size: 1.1rem;
   color: #1e293b;
 }
-.skill-card .icons-name_night {
+
+.skill-card_night .icons-name_night {
   font-weight: 600;
   font-size: 1.1rem;
   color: #fff;
@@ -104,7 +125,17 @@
     align-items: center;
     gap: 0px;
   }
-  .skill-card {
+  .skill-card_light {
+    width: 60%;
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    cursor: pointer;
+  }
+  .skill-card_night {
     width: 60%;
     height: 47%;
     display: flex;
@@ -133,23 +164,44 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
-  .skill-card {
+  .skill-card_light {
     margin-bottom: 0px;
     width: 52%;
     height: 30%;
     gap: 0;
   }
-  .skill-card .skill-icon .skill-img {
+  .skill-card_night {
+    margin-bottom: 0px;
+    width: 52%;
+    height: 30%;
+    gap: 0;
+  }
+  .skill-card_light .skill-icon .skill-img {
     position: relative;
     top: 5px;
     width: 63%;
   }
-  .skill-card .icons-name_light {
+  .skill-card_night .skill-icon .skill-img {
+    position: relative;
+    top: 5px;
+    width: 63%;
+  }
+  .skill-card_light .icons-name_light {
     position: relative;
     top: -10px;
     font-size: 0.8rem;
   }
-  .skill-card .icons-name_night {
+  .skill-card_night .icons-name_light {
+    position: relative;
+    top: -10px;
+    font-size: 0.8rem;
+  }
+  .skill-card_light .icons-name_night {
+    position: relative;
+    top: -10px;
+    font-size: 0.8rem;
+  }
+  .skill-card_night .icons-name_night {
     position: relative;
     top: -10px;
     font-size: 0.8rem;

@@ -55,7 +55,7 @@
 /* ============================= */
 /* CARD DESIGN                   */
 /* ============================= */
-.project-card {
+.project-card_light {
   background: #fff;
   border-radius: 18px;
   padding: 0;
@@ -66,6 +66,21 @@
   transition: 0.35s ease;
   text-decoration: none;
   color: inherit;
+  overflow: hidden;
+}
+
+.project-card_night {
+  background: transparent;
+  border-radius: 18px;
+  padding: 0;
+  height: 220px;
+  padding-top: 15px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 20px;
+  cursor: pointer;
+  transition: 0.35s ease;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid #fff;
   overflow: hidden;
 }
 
@@ -91,31 +106,85 @@
 
 .red {
   background: #ff5f56;
+  transition: all 0.4s ease-in-out;
+  animation: fed1 1.3s infinite ease-in-out;
+}
+
+@keyframes fed1 {
+     0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(45deg);
+  }
 }
 
 .yellow {
   background: #ffbd2e;
+  transition: all 0.4s ease-in-out;
+  animation: fed2 1.7s infinite ease-in-out;
+}
+@keyframes fed2 {
+     0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(45deg);
+  }
 }
 
 .green {
   background: #27c93f;
+  transition: all 0.4s ease-in-out;
+  animation: fed3 2s infinite ease-in-out;
+}
+
+@keyframes fed3 {
+     0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(45deg);
+  }
 }
 
 /* ============================= */
 /* CARD BODY                     */
 /* ============================= */
-.project-body {
+.project-body_light {
   padding: 20px 20px;
   text-align: left;
 }
 
-.project-body h3 {
+.project-body_night {
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.project-body_light h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.project-body_night h3 {
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.project-body p {
+.project-body_light p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.project-body_night p {
+  color: #fff;
   font-size: 0.95rem;
   opacity: 0.75;
   line-height: 1.5;

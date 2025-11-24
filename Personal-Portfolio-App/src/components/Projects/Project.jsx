@@ -15,14 +15,14 @@ const Projects = () => {
 
       <div className="project-grid">
         {projects.map((p, i) => (
-          <a key={i} href={p.link} className="project-card" target="_blank">
+          <a key={i} href={p.link} className={theme ? "project-card_light" : "project-card_night"} target="_blank">
             <div className="project-header">
               <div className="dot red"></div>
               <div className="dot yellow"></div>
               <div className="dot green"></div>
             </div>
 
-            <div className="project-body">
+            <div className={theme ? "project-body_light" : "project-body_night"}>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
               <span className="tech">{p.tech}</span>
