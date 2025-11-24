@@ -2,9 +2,17 @@
 /* ABOUT SECTION */
 /* ---------------------- */
 
-.about {
+.about_light {
   padding: 10px 8%;
   background: #f8f9ff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.about_night {
+  padding: 10px 8%;
+  background: #2a2a2a;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -29,17 +37,33 @@
   animation: fadeInLeft 1s ease forwards;
 }
 
-.section-title {
+.section-title_light {
   font-size: clamp(2rem, 5vw, 2.5rem);
   font-weight: 700;
   color: #4f46e5;
   margin-bottom: 20px;
 }
 
-.about-description {
+.section-title_night {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about-description_light {
   font-size: clamp(1rem, 1.2vw, 1.15rem);
   line-height: 1.8;
   color: #1f2937;
+  margin-bottom: 25px;
+  font-weight: 500;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-description_night {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.8;
+  color: #fff;
   margin-bottom: 25px;
   font-weight: 500;
   animation: fadeInUp 1s ease forwards;
@@ -49,10 +73,17 @@
 /* SKILLS LIST WITH ANIMATION */
 /* ---------------------- */
 
-.skills-title {
+.skills-title_light {
   font-size: 1.4rem;
   font-weight: 600;
   color: #4f46e5;
+  margin-bottom: 15px;
+}
+
+.skills-title_night {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
   margin-bottom: 15px;
 }
 

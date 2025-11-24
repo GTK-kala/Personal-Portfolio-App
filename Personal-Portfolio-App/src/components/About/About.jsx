@@ -1,20 +1,24 @@
+import { ContextApi } from "../../context/ContextProvider";
 import { skill } from "../../assets/Data/Data";
+import { useContext } from "react";
 import "./About.css";
 
 const About = () => {
+   const { theme } = useContext(ContextApi);
+
   return (
-    <section className="about" id="about">
+    <section className={theme ? "about_light" : "about_night"} id="about">
       <div className="about-container">
         {/* Text Content */}
         <div className="about-text">
-          <h2 className="section-title">About Me</h2>
-          <p className="about-description">
+          <h2 className={theme ? "section-title_light" : "section-title_night"}>About Me</h2>
+          <p className={theme ? "about-description_light" : "about-description_night"}>
             👨‍💻 I'm a Full-Stack Developer passionate about building modern,
             responsive, and interactive web applications. I turn ideas into
             seamless user experiences using the latest technologies.
           </p>
 
-          <h3 className="skills-title">My Skills</h3>
+          <h3 className={theme ? "skills-title_light" : "skills-title_night"}>My Skills</h3>
           <div className="skills-list">
             {skill.map((skill, index) => (
               <span key={index} className="skill">

@@ -12,6 +12,7 @@
   background: linear-gradient(135deg, #eef2ff, #e0e7ff);
   position: relative;
   overflow: hidden;
+  margin-bottom: 5px;
   border-radius: 10px;
 }
 
@@ -26,6 +27,7 @@
   background: #2a2a2a;
   position: relative;
   overflow: hidden;
+  margin-bottom: 5px;
   border-radius: 10px;
 }
 .hero-content {
@@ -80,7 +82,7 @@
   padding: 10px 24px;
   border-radius: 8px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   text-decoration: none;
 }
 
@@ -91,14 +93,20 @@
   padding: 10px 24px;
   border-radius: 8px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease-in-out;
   text-decoration: none;
 }
 
 .hero-buttons .btn_light:hover {
   background: #fff;
   color: #4f46e5;
-  border: 2px solid #4f46e5;
+  transform: scale(1.05);
+}
+
+.hero-buttons .btn_night:hover {
+  background-color: #353535;
+  border: none;
+  transform: scale(1.05);
 }
 
 .hero-image {
