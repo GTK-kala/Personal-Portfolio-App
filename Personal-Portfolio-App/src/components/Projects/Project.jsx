@@ -1,11 +1,15 @@
+import { ContextApi } from "../../context/ContextProvider";
 import { projects } from "../../assets/Data/Data";
+import { useContext } from "react";
 import "./Project.css";
 
 const Projects = () => {
+   const { theme } = useContext(ContextApi);
+
   return (
-    <section className="projects" id="projects">
-      <h2 className="projects-title">Projects</h2>
-      <p className="projects-sub">
+    <section className={theme ? "projects_light" : "projects_night"} id="projects">
+      <h2 className={theme ? "projects-title_light" : "projects-title_night"}>Projects</h2>
+      <p className={theme ? "projects-sub_light" : "projects-sub_night"}>
         Some of my best work that shows my skills and creativity.
       </p>
 
