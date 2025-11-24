@@ -3,6 +3,9 @@
 /* ============================= */
 .projects {
   padding: 2px 8% 80px;
+    background: linear-gradient(135deg, #e2e6f4, #e3e8fa);
+    border-radius: 10px;
+    margin-bottom: 5px;
   text-align: center;
 }
 

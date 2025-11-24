@@ -1,7 +1,7 @@
 .skill-wrapper_light {
   margin-top: 2px;
   padding: 4px 4%;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   text-align: center;
   transition: 1s ease;
   margin-bottom: 5px;
@@ -12,7 +12,7 @@
 .skill-wrapper_night {
   margin-top: 2px;
   padding: 4px 4%;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   text-align: center;
   transition: 1s ease;
   background: #2a2a2a;
@@ -129,7 +129,7 @@
   }
   .skill-card {
     margin-bottom: 0px;
-    width: 52%;
+    width: 50%;
     height: 30%;
     gap: 0;
   }
