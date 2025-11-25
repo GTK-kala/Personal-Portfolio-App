@@ -230,7 +230,7 @@
   }
 }
 @media (max-width: 400px) {
-  .about-description_light{
+ .about-description_light{
     position: relative;
     left: -17px;
   }
@@ -248,7 +248,7 @@
   }
   .skills-list {
     position: relative;
-    left: -21px;
+    left: -18px;
   }
   .skills-list span {
     padding: 17px;
@@ -256,7 +256,7 @@
   }
 
   .about-cards {
-    flex: 1 2 300px;
+    flex: 1 2 400px;
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
@@ -265,7 +265,7 @@
 
   .card_light {
     position: relative;
-    left: -22px;
+    left: -20px;
     height: 20%;
     background: #fff;
     flex: 1 1 60px;
@@ -279,7 +279,7 @@
 
   .card_night {
     position: relative;
-    left: -22px;
+    left: -20px;
     height: 20%;
     background: transparent;
     flex: 1 1 60px;

@@ -29,6 +29,8 @@
 
 /* Left Content */
 .contact-left {
+  position: relative;
+  top: 50px;
   flex: 1;
   min-width: 300px;
   position: relative;
@@ -171,10 +173,10 @@
 /* Responsive */
 @media (max-width: 900px) {
   .contact-section_light {
-    padding: 0px;
+    padding: 10px;
   }
   .contact-section_night {
-    padding: 0px;
+    padding: 10px;
   }
   .contact-container {
     flex-direction: column;
@@ -253,6 +255,12 @@
   }
 }
 @media (max-width: 400px) {
+  .contact-section_light{
+    padding-top: 35px;
+  }
+  .contact-section_night{
+    padding-top: 35px;
+  }
   .contact-section_light {
     height: 100vh;
   }
