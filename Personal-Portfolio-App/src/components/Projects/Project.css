@@ -102,52 +102,34 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  animation: floats 2.2s ease-in-out infinite;
 }
 
 .red {
   background: #ff5f56;
-  transition: all 0.4s ease-in-out;
-  animation: fed1 1.3s infinite ease-in-out;
-}
-
-@keyframes fed1 {
-     0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-7px) rotate(45deg);
-  }
+ animation-delay: 0s;
 }
 
 .yellow {
   background: #ffbd2e;
-  transition: all 0.4s ease-in-out;
-  animation: fed2 1.7s infinite ease-in-out;
-}
-@keyframes fed2 {
-     0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-7px) rotate(45deg);
-  }
+  animation-delay: 0.5s;
 }
 
 .green {
   background: #27c93f;
-  transition: all 0.4s ease-in-out;
-  animation: fed3 2s infinite ease-in-out;
+  animation-delay: 0.8;
 }
 
-@keyframes fed3 {
-     0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
+@keyframes floats {
+  0% {
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-7px) rotate(45deg);
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 

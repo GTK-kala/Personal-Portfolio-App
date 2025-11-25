@@ -1,11 +1,20 @@
 /* Overall Section */
-.contact-section {
+.contact-section_light {
   padding: 15px 20px 40px 20px;
   margin-bottom: 0px;
   display: flex;
   justify-content: center;
   background: linear-gradient(135deg, #eef2ff, #f8fafc);
   /* background: linear-gradient(135deg, #eef2ff, #1f77cf); */
+  border-radius: 10px;
+}
+
+.contact-section_night {
+  padding: 15px 20px 40px 20px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  background: #2a2a2a;
   border-radius: 10px;
 }
 
@@ -26,15 +35,29 @@
   position: relative;
 }
 
-.contact-title {
+.contact-title_light {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-primary, #111);
   margin-bottom: 1rem;
 }
 
-.contact-text {
+.contact-title_night {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.contact-text_light {
   color: var(--text-secondary, #555);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.contact-text_night {
+  color: #fff;
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 400px;
@@ -134,7 +157,10 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-  .contact-section {
+  .contact-section_light {
+    padding: 0px;
+  }
+  .contact-section_night {
     padding: 0px;
   }
   .contact-container {
@@ -153,26 +179,43 @@
     align-items: center;
   }
 
-  .contact-text {
+  .contact-text_light {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .contact-text_night {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .contact-btn {
     width: 104%;
   }
 }
 
 @media (max-width: 500px) {
-  .contact-section {
+  .contact-section_light {
     padding: 15px 20px 0px 20px;
   }
-  .contact-title {
+  .contact-section_night {
+    padding: 15px 20px 0px 20px;
+  }
+  .contact-title_light {
+    font-size: 2rem;
+  }
+
+  .contact-title_night {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .contact-section {
+  .contact-section_light {
+    padding: 25px 20px 0px 20px;
+    height: 80vh;
+  }
+  .contact-section_night {
     padding: 25px 20px 0px 20px;
     height: 80vh;
   }
@@ -197,7 +240,10 @@
   }
 }
 @media (max-width: 400px) {
-  .contact-section {
+  .contact-section_light {
+    height: 100vh;
+  }
+  .contact-section_night {
     height: 100vh;
   }
 }

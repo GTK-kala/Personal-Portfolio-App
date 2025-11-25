@@ -1,10 +1,12 @@
+import { ContextApi } from "../../context/ContextProvider";
+import { useState, useContext} from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
   // const [loading, setLoading] = useState(false);
+  const { theme } = useContext(ContextApi);
   const [name , setName ] = useState('');
   const [email , setEmail ] = useState('');
   const [message , setMessage ] = useState('');
@@ -33,11 +35,11 @@ const Contact = () => {
     setMessage('');
   }
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className={theme ? "contact-section_light" : "contact-section_night"}>
       <div className="contact-container">
         <div className="contact-left">
-          <h2 className="contact-title">Let's Work Together</h2>
-          <p className="contact-text">
+          <h2 className={theme ? "contact-title_light" : "contact-title_night"}>Let's Work Together</h2>
+          <p className={theme ? "contact-text_light" : "contact-text_night"}>
             Feel free to reach out for collaborations, job opportunities, or any
             projects.
           </p>
