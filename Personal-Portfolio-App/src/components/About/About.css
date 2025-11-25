@@ -3,7 +3,7 @@
 /* ---------------------- */
 
 .about_light {
-  padding: 10px 8%;
+  padding: 35px 8%;
   background: #f8f9ff;
   position: relative;
   overflow: hidden;
@@ -12,7 +12,7 @@
 }
 
 .about_night {
-  padding: 10px 8%;
+  padding: 35px 8%;
   background: #2a2a2a;
   position: relative;
   overflow: hidden;
@@ -232,11 +232,11 @@
 @media (max-width: 400px) {
  .about-description_light{
     position: relative;
-    left: -15px;
+    left: -16px;
   }
   .about-description_night{
     position: relative;
-    left: -15px;
+    left: -16px;
   }
   .skills-title_light {
     position: relative;
@@ -248,7 +248,7 @@
   }
   .skills-list {
     position: relative;
-    left: -14px;
+    left: -16px;
   }
   .skills-list span {
     padding: 17px;
@@ -265,7 +265,7 @@
 
   .card_light {
     position: relative;
-    left: -13px;
+    left: -16px;
     height: 20%;
     background: #fff;
     flex: 1 1 60px;
@@ -279,7 +279,7 @@
 
   .card_night {
     position: relative;
-    left: -14px;
+    left: -16px;
     height: 20%;
     background: transparent;
     flex: 1 1 60px;

@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px 6%;
+  padding: 60px 6%;
   padding-bottom: 70px;
   min-height: unset;
   background: linear-gradient(135deg, #eef2ff, #e0e7ff);
@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px 6%;
+  padding: 60px 6%;
   padding-bottom: 70px;
   min-height: unset;
   background: #2a2a2a;
@@ -270,13 +270,13 @@
 }
 @media (max-width: 500px) {
   .hero_light {
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row-reverse;
     gap: 30px;
   }
   .hero_night {
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row-reverse;
     gap: 30px;
@@ -317,13 +317,13 @@
 
 @media (max-width: 480px) {
   .hero_light {
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row-reverse;
     gap: 30px;
   }
   .hero_night {
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row-reverse;
     gap: 30px;
