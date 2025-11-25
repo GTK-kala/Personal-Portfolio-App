@@ -210,6 +210,9 @@
 }
 
 @media (max-width: 500px) {
+  .contact-container{
+    gap: 50px;
+  }
   .contact-section_light {
     padding: 15px 20px 0px 20px;
   }
@@ -255,6 +258,10 @@
   }
 }
 @media (max-width: 400px) {
+  .contact-left{
+    position: relative;
+    top: 14px;
+  }
   .contact-section_light{
     padding-top: 35px;
   }
