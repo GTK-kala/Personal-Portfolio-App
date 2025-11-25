@@ -52,9 +52,9 @@ const Contact = () => {
         </div>
 
         <form className="contact-form" onSubmit={(e) =>HandelSubmit(e)}>
-          <input type="text" name="name" value={name} placeholder="Your Name" onChange={(e) => setName(e.target.value)} required />
-          <input type="email" name="email" value={email} placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} required />
-          <textarea name="message" value={message} placeholder="Your Message" onChange={(e) => setMessage(e.target.value)} required></textarea>
+          <input className="input" type="text" name="name" value={name} placeholder="Your Name" onChange={(e) => setName(e.target.value)} required />
+          <input className="input" type="email" name="email" value={email} placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} required />
+          <textarea className="input" name="message" value={message} placeholder="Your Message" onChange={(e) => setMessage(e.target.value)} required></textarea>
           <button type="submit" className="contact-btn">
             Send Message
           </button>
