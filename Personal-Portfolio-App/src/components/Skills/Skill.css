@@ -1,6 +1,6 @@
 .skill-wrapper_light {
   margin-top: 2px;
-  padding: 20px 4%;
+  padding: 25px 4%;
   padding-bottom: 40px;
   text-align: center;
   transition: 1s ease;
@@ -11,7 +11,7 @@
 
 .skill-wrapper_night {
   margin-top: 2px;
-  padding: 20px 4%;
+  padding: 25px 4%;
   padding-bottom: 40px;
   text-align: center;
   transition: 1s ease;
@@ -149,13 +149,13 @@
 @media (max-width: 400px) {
   .skill-wrapper_light {
     background-color: #1e293b;
-    padding: 25px 2%;
+    padding: 35px 2%;
     margin-bottom: 5px;
   }
 
   .skill-wrapper_night {
     background-color: #2a2a2a;
-    padding: 25px 2%;
+    padding: 35px 2%;
     margin-bottom: 5px;
   }
   .skill-grid {
