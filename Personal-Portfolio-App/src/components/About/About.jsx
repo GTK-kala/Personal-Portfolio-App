@@ -30,23 +30,23 @@ const About = () => {
 
         {/* Optional Info Cards */}
         <div className="about-cards">
-          <div className="card">
+          <div className={theme ? "card_light" : "card_night"}>
             <h3>Experience</h3>
             <p>2+ Years</p>
           </div>
-          <div className="card">
+          <div className={theme ? "card_light" : "card_night"}>
             <h3>Projects</h3>
             <p>100+ Completed</p>
           </div>
-          <div className="card">
+          <div className={theme ? "card_light" : "card_night"}>
             <h3>Clients</h3>
             <p>120+ Clients</p>
           </div>
-          <div className="card">
+          <div className={theme ? "card_light" : "card_night"}>
             <h3>Workers</h3>
             <p>5+ Partner</p>
           </div>
-          <div className="card">
+          <div className={theme ? "card_light" : "card_night"}>
             <h3>Hours Of Support</h3>
             <p>3000+ Completed</p>
           </div>
