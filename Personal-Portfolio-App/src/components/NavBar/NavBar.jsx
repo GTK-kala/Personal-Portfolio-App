@@ -28,7 +28,7 @@ const NavBar = () => {
         {/* Dark and Light Mood */}
 
         <button  onClick={() => HandleTheme()} className="theme-toggle-btn">
-          {theme ? <Sun /> : <Moon className="moon"/>}
+          {theme ? <Sun /> : <span className="Dark_icon"><Moon className="moon"/></span>}
         </button>
 
         {/* Nav Links */}
