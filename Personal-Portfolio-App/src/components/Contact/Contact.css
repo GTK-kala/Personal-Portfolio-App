@@ -249,7 +249,7 @@
     height: 80vh;
   }
   .contact-container {
-    gap: 0rem;
+    gap: 40px;
   }
   .contact-animation {
     position: relative;

@@ -15,7 +15,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="footer-section">
+        <div className="footer-section second">
           <h4 className="footer-subtitle">Quick Links</h4>
           <ul>
             <li>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h4 className="footer-subtitle">Connect</h4>
+          <h4 className="footer-subtitle">Contact</h4>
           <div className="footer-socials">
             <a href="https://github.com/GTK-kala" target="_blank">
               <FaGithub size={25} />
@@ -54,29 +54,29 @@ const Footer = () => {
               <span className="icon">
                 <CiLocationOn />
               </span>
-              <p>
-                <strong>Address</strong> <br />
-                <span>Addis Ababa , Ethiopia</span>
-              </p>
+              <h3 className="contact-name">
+                <p className="info1">Address</p> <br />
+                <p className="info2">Addis Ababa , Ethiopia</p>
+              </h3>
             </div>
 
             <div className="info-address">
               <span className="icon">
                 <IoCallOutline />
               </span>
-              <p>
-                <strong>Call Us</strong> <br />
-                <span>+251 909 100 754</span>
-              </p>
+              <h3 className="contact-name">
+                <p className="info1">Call Us</p> <br />
+                <p className="info2">+251 909 100 754</p>
+              </h3>
             </div>
             <div className="info-address">
               <span className="icon">
                 <MdOutlineMail />
               </span>
-              <p>
-                <strong>Email Us</strong> <br />
-                <span>gtkkala1110@gmail.com</span>
-              </p>
+              <h3 className="contact-name">
+                <p className="info1">Email Us</p> <br />
+                <p className="info2">gtkkala1110@gmail.com</p>
+              </h3>
             </div>
           </div>
         </div>
