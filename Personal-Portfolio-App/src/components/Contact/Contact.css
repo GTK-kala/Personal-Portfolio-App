@@ -221,7 +221,7 @@
 }
 @media (max-width:580px) {
   .contact-container{
-    gap: 50px;
+    gap: 70px;
   }
 }
 @media (max-width: 500px) {
@@ -279,14 +279,20 @@
   }
   .contact-section_light {
     padding-top: 35px;
+    padding-bottom: 0px;
   }
   .contact-section_night {
     padding-top: 35px;
+    padding-bottom: 0px;
   }
   .contact-section_light {
-    height: 100vh;
+    height: 78vh;
   }
   .contact-section_night {
-    height: 100vh;
+    height: 78vh;
+  }
+  .contact-form{
+    position: relative;
+    top: -100px;
   }
 }
