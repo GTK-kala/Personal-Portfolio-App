@@ -253,11 +253,11 @@
     height: 80vh;
   }
   .contact-container {
-    gap: 80px;
+    gap: 30px;
   }
   .contact-animation {
     position: relative;
-    top: 2rem;
+    top: 0.5rem;
   }
   .contact-form {
     position: relative;
@@ -284,13 +284,13 @@
     padding-top: 35px;
   }
   .contact-section_light {
-    height: 100vh;
+    height: 120vh;
   }
   .contact-section_night {
-    height: 100vh;
+    height: 75vh;
   }
-  /* .contact-form {
+  .contact-section_night .contact-form {
     position: relative;
-    top: -30px;
-  } */
+    top: -100px;
+  }
 }
