@@ -110,6 +110,13 @@
   padding-top: 1.5rem;
 }
 
+.contact-info{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* responsive */
 @media (max-width: 500px) {
   .footer-title {

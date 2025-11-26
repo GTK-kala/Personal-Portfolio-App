@@ -170,9 +170,10 @@
   font-size: 1rem;
   color: #1f2937;
 }
+
 .card_night p {
   font-size: 1rem;
-  color: #1f2937;
+  color: #fff;
 }
 
 .card_light:hover {
