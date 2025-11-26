@@ -257,7 +257,7 @@
   }
   .contact-animation {
     position: relative;
-    top: 2rem;
+    top: 4rem;
   }
   .contact-form {
     position: relative;
@@ -284,17 +284,17 @@
     padding-top: 35px;
   }
   .contact-section_light {
-    height: 80vh;
+    height: 90vh;
   }
   .contact-section_night {
-    height: 80vh;
+    height: 90vh;
   }
   .contact-section_light .contact-form {
     position: relative;
-    top: -30px;
+    top: -20px;
   }
   .contact-section_night .contact-form {
     position: relative;
-    top: -30px;
+    top: -20px;
   }
 }
