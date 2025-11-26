@@ -232,11 +232,11 @@
 @media (max-width: 400px) {
  .about-description_light{
     position: relative;
-    left: -15px;
+    left: -14px;
   }
   .about-description_night{
     position: relative;
-    left: -15px;
+    left: -17px;
   }
   .skills-title_light {
     position: relative;
@@ -248,11 +248,11 @@
   }
   .about_light .skills-list {
     position: relative;
-    left: -14px;
+    left: -10px;
   }
   .about_night .skills-list {
     position: relative;
-    left: -16px;
+    left: -18px;
   }
   .skills-list span {
     padding: 17px;
@@ -283,7 +283,7 @@
 
   .card_night {
     position: relative;
-    left: -19px;
+    left: -15px;
     height: 20%;
     background: transparent;
     flex: 1 1 60px;
