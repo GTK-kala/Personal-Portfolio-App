@@ -215,6 +215,7 @@
 /* ======================== */
 
 @media (max-width: 900px) {
+
   .hamburger {
     display: flex;
   }
@@ -274,9 +275,6 @@
 }
 
 @media (max-width: 400px) {
-  .header {
-    margin-top: 7px;
-  }
   .hamburger {
     width: 26px;
     height: 20px;
