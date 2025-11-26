@@ -289,8 +289,8 @@
   .contact-section_night {
     height: 100vh;
   }
-  .contact-form {
+  /* .contact-form {
     position: relative;
     top: -30px;
-  }
+  } */
 }
