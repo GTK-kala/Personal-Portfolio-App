@@ -218,11 +218,11 @@
   .hamburger {
     display: flex;
   }
-  .theme-toggle-btn{
+  .theme-toggle-btn {
     right: 80px;
   }
 
- .header_light .nav-links {
+  .header_light .nav-links {
     position: fixed;
     top: 75px;
     right: 0;
@@ -239,7 +239,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: height 0.35s ease;
   }
- .header_night .nav-links {
+  .header_night .nav-links {
     position: fixed;
     top: 83px;
     right: 0;
@@ -268,9 +268,9 @@
   }
 }
 @media (max-width: 500px) {
-   .theme-toggle-btn{
-     right: 70px;
-   }
+  .theme-toggle-btn {
+    right: 70px;
+  }
 }
 
 @media (max-width: 400px) {

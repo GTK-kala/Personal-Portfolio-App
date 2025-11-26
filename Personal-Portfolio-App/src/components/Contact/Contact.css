@@ -133,16 +133,16 @@
 
 .contact-section_light .contact-form input:focus,
 .contact-form textarea:focus {
-  border:1px solid #6366f1;
+  border: 1px solid #6366f1;
   box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
   outline: none;
 }
 
-.contact-section_light .input{
+.contact-section_light .input {
   color: #111;
   outline: none;
 }
-.contact-section_night .input{
+.contact-section_night .input {
   width: 90%;
   padding: 14px 18px;
   border-radius: 12px;
@@ -154,12 +154,12 @@
   border: none;
   outline: 2px dashed #fff;
 }
-.contact-section_night .input:focus{
+.contact-section_night .input:focus {
   border: none;
-   outline: 2px solid #fff;
+  outline: 2px solid #fff;
 }
 
-.contact-section_night .input::placeholder{
+.contact-section_night .input::placeholder {
   color: #bab8b8;
 }
 
@@ -219,9 +219,13 @@
     width: 104%;
   }
 }
-
-@media (max-width: 500px) {
+@media (max-width:580px) {
   .contact-container{
+    gap: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-container {
     gap: 90px;
   }
   .contact-section_light {
@@ -249,10 +253,7 @@
     height: 80vh;
   }
   .contact-container {
-    gap: 100px;
-  }
-  .contact-left {
-    margin-bottom: 16px;
+    gap: 80px;
   }
   .contact-animation {
     position: relative;
@@ -272,14 +273,14 @@
   }
 }
 @media (max-width: 400px) {
-  .contact-left{
+  .contact-left {
     position: relative;
     top: 4px;
   }
-  .contact-section_light{
+  .contact-section_light {
     padding-top: 35px;
   }
-  .contact-section_night{
+  .contact-section_night {
     padding-top: 35px;
   }
   .contact-section_light {

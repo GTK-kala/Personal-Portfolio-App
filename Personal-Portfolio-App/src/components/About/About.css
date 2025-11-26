@@ -111,7 +111,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.about_night span{
+.about_night span {
   color: #fff;
   background: transparent;
   border: 2px solid #fff;
@@ -231,11 +231,11 @@
   }
 }
 @media (max-width: 400px) {
- .about-description_light{
+  .about-description_light {
     position: relative;
     left: -14px;
   }
-  .about-description_night{
+  .about-description_night {
     position: relative;
     left: -17px;
   }
