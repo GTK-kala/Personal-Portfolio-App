@@ -279,20 +279,14 @@
   }
   .contact-section_light {
     padding-top: 35px;
-    padding-bottom: 0px;
   }
   .contact-section_night {
     padding-top: 35px;
-    padding-bottom: 0px;
   }
   .contact-section_light {
-    height: 90vh;
+    height: 100vh;
   }
   .contact-section_night {
-    height: 90vh;
-  }
-  .contact-form{
-    position: relative;
-    top: -80px;
+    height: 100vh;
   }
 }
