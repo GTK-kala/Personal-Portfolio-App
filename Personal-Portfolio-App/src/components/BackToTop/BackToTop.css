@@ -27,6 +27,21 @@
   transform: translateY(-8px);
 }
 
+.arrow{
+  position: relative;
+  bottom: -2px;
+  animation: BounceArrow 1.8s infinite ease-in-out;
+}
+
+@keyframes BounceArrow {
+  100%{
+    transform: scale(1.2);
+  }
+  0%{
+    transform: scale(0.2);
+  }
+}
+
 /* hover */
 .back-to-top:hover {
   background: #4338ca;

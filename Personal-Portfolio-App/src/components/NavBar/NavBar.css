@@ -32,18 +32,18 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;      
-  height: 10px;     
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;        
+  background: #fff;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   height: 5px;
-  background: #6963e0;        
+  background: #6963e0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -82,7 +82,7 @@
 }
 
 .light_icon {
- color: #4f46e5;
+  color: #4f46e5;
 }
 
 /* ======================== */
@@ -103,7 +103,7 @@
 /* LOGO */
 /* ======================== */
 
-.logo_light a{
+.logo_light a {
   font-size: clamp(2.3rem, 1.8vw, 1.9rem);
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -113,7 +113,7 @@
   cursor: pointer;
 }
 
-.logo_night a{
+.logo_night a {
   font-size: clamp(2.3rem, 1.8vw, 1.9rem);
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -238,7 +238,6 @@
 /* ======================== */
 
 @media (max-width: 900px) {
-
   .hamburger {
     display: flex;
   }
@@ -292,6 +291,12 @@
 @media (max-width: 500px) {
   .theme-toggle-btn {
     right: 70px;
+  }
+  .logo_light a {
+    font-size: clamp(2rem, 1.8vw, 1.9rem);
+  }
+  .logo_night a {
+    font-size: clamp(2rem, 1.8vw, 1.9rem);
   }
 }
 

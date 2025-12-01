@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+import { ContextApi } from "../../context/ContextProvider";
+import { useState, useEffect, useContext } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import "./BackToTop.css";
 
 const BackToTop = () => {
+  const { theme } = useContext(ContextApi);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -29,7 +31,9 @@ const BackToTop = () => {
       className={`back-to-top ${visible ? "show" : ""}`}
       onClick={scrollToTop}
     >
-      <FaArrowUp />
+      <span className="arrow">
+        <FaArrowUp />
+      </span>
     </button>
   );
 };
