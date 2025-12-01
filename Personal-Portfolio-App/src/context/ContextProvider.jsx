@@ -3,7 +3,7 @@ import { useState , useEffect , createContext, Children} from "react";
 export const ContextApi = createContext(null);
 
 const ContextProvider = (props) => {
-  const [theme , setTheme] = useState(false);
+  const [theme , setTheme] = useState(true);
 
   const HandleTheme = () =>{
     if(theme){

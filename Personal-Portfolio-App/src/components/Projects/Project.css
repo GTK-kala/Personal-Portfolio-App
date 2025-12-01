@@ -86,7 +86,12 @@
   overflow: hidden;
 }
 
-.project-card:hover {
+.project-card_light:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 14px 30px;
+}
+
+.project-card_night:hover {
   transform: translateY(-10px);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 14px 30px;
 }

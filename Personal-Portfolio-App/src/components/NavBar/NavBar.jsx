@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <header className={theme ? "header_light" : "header_night"} id="Home">
       <nav className="navbar">
-        <div className={theme ? "logo_light" : "logo_night"}>Khalid</div>
+        <div className={theme ? "logo_light" : "logo_night"}><a href="#home">Khalid</a></div>
 
         {/* Hamburger Icon */}
         <div
@@ -28,7 +28,7 @@ const NavBar = () => {
         {/* Dark and Light Mood */}
 
         <button  onClick={() => HandleTheme()} className="theme-toggle-btn">
-          {theme ? <Moon /> : <span className="Dark_icon"><Sun className="moon"/></span>}
+          {theme ? <span className="light_icon"><Moon /> </span>: <span className="Dark_icon"><Sun className="moon"/></span>}
         </button>
 
         {/* Nav Links */}
