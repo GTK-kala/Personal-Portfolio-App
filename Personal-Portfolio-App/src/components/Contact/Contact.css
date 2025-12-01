@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(135deg, #eef2ff, #f8fafc);
-  border-radius: 10px;
 }
 
 .contact-section_night {
@@ -14,7 +13,6 @@
   display: flex;
   justify-content: center;
   background: #2a2a2a;
-  border-radius: 10px;
 }
 
 .contact-container {

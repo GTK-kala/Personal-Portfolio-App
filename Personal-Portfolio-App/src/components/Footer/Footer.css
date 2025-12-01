@@ -2,10 +2,9 @@
   background: #111827;
   color: #e5e7eb;
   padding: 3rem 1.8rem 2rem;
-  margin-top: 0.3rem;
+  margin-top: 3px;
   border-top: 1px solid #1f2937;
   animation: fadeIn 1s ease forwards;
-  border-radius: 10px;
 }
 
 /* fade animation */
