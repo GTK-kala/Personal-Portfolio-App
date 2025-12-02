@@ -100,13 +100,16 @@
   border-radius: 8px;
   font-weight: 500;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 0.8s ease forwards;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
-.skill:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.about_light .skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(79, 70, 229, 0.3);
+}
+.about_night .skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
 }
 
 .about_night span {
@@ -353,16 +356,5 @@
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
