@@ -1,7 +1,6 @@
 import { ContextApi } from "../../context/ContextProvider";
 import { Data } from "../../assets/Data/Data";
 import { useContext } from "react";
-import "./Hero.css";
 
 const Hero = () => {
   const { theme } = useContext(ContextApi);
@@ -20,7 +19,11 @@ const Hero = () => {
           Experiences
         </p>
         <div className="hero-buttons">
-          <a href="/resume.pdf" className={theme ? "btn_light" : "btn_night"} download>
+          <a
+            href="/resume.pdf"
+            className={theme ? "btn_light" : "btn_night"}
+            download
+          >
             Download CV
           </a>
           <a href="#contact" className={theme ? "btn_light " : "btn_night"}>
