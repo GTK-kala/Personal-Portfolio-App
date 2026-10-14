@@ -1,10 +1,9 @@
-import { ContextApi } from "../../context/ContextProvider"
+import { ContextApi } from "../../context/ContextProvider";
+import { useEffect, useRef, useContext } from "react";
 import { techIcons } from "../../assets/Data/Data";
-import { useEffect, useRef, useContext} from "react";
-import "./Skill.css";
 
 const Skill = () => {
-  const { theme } = useContext(ContextApi)
+  const { theme } = useContext(ContextApi);
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -12,15 +11,21 @@ const Skill = () => {
       ([entry]) => {
         if (entry.isIntersecting) sectionRef.current.classList.add("show");
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     observer.observe(sectionRef.current);
   }, []);
 
   return (
-    <section className={theme ? "skill-wrapper_light" : "skill-wrapper_night"} id="skills" ref={sectionRef}>
-      <h2 className={theme ? "skill-title_light" : "skill-title_night"}>My Skills</h2>
+    <section
+      className={theme ? "skill-wrapper_light" : "skill-wrapper_night"}
+      id="skills"
+      ref={sectionRef}
+    >
+      <h2 className={theme ? "skill-title_light" : "skill-title_night"}>
+        My Skills
+      </h2>
       <p className={theme ? "skill-subtitle_light" : "skill-subtitle_night"}>
         Tools & technologies I use to craft modern digital experiences.
       </p>
@@ -30,13 +35,18 @@ const Skill = () => {
           <div
             className={theme ? "skill-card_light" : "skill-card_night"}
             style={{ animationDelay: `${i * 0.1}s` }}
-            key={i} >
-            <span className="skill-icon"><img className="skill-img" src={skill.icon} alt={skill.name} /></span>
-            <h3 className={theme ? "icons-name_light" : "icons-name_night"}>{skill.name}</h3>
+            key={i}
+          >
+            <span className="skill-icon">
+              <img className="skill-img" src={skill.icon} alt={skill.name} />
+            </span>
+            <h3 className={theme ? "icons-name_light" : "icons-name_night"}>
+              {skill.name}
+            </h3>
           </div>
         ))}
       </div>
     </section>
   );
-}
+};
 export default Skill;

@@ -1,7 +1,7 @@
 import { FaGithub, FaTelegramPlane, FaEnvelope } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
-import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineMail } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
 
 const Footer = () => {
   return (
