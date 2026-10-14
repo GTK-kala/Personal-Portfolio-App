@@ -1,38 +1,27 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-  scroll-behavior: smooth;
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-100 bg-gray-900;
+  }
 }
 
-:root {
-  scroll-padding-top: 70px;
-}
-body .light{
-  background: #fff;
-}
-body .dark{
-  background: #111;
-}
+@layer components {
+  .gradient-text {
+    @apply text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text animate-gradient;
+  }
 
-/* Body classes for light & dark mode (variables defined globally) */
-/* body.light {
-  --bg: #f5f5f5;
-  --card-bg: rgba(255, 255, 255, 0.85);
-  --card-bg-hover: rgba(255, 255, 255, 0.95);
-  --text-primary: #1a1a1a;
-  --text-muted: #555;
-  --accent: #1e90ff;
-  --border: rgba(0, 0, 0, 0.1);
-}
+  .glass-effect {
+    @apply border bg-white/5 backdrop-blur-lg border-white/10;
+  }
 
-body.dark {
-  --bg: #121212;
-  --card-bg: rgba(28, 28, 28, 0.85);
-  --card-bg-hover: rgba(35, 35, 35, 0.95);
-  --text-primary: #eee;
-  --text-muted: #aaa;
-  --accent: #1e90ff;
-  --border: rgba(255, 255, 255, 0.1);
-} */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  }
+}
