@@ -1,12 +1,12 @@
-import { useState, useEffect, useContext } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import { useState, useEffect, useContext } from "react";
 import { ContextApi } from "../../context/ContextProvider";
 
 const Navbar = () => {
-  const { theme, HandleTheme } = useContext(ContextApi);
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
+  const { theme, HandleTheme } = useContext(ContextApi);
 
   useEffect(() => {
     const handleScroll = () => {

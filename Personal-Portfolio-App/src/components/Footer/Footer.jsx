@@ -1,10 +1,10 @@
-import { ContextApi } from "../../context/ContextProvider";
 import { useContext } from "react";
-import { FaGithub, FaTelegramPlane } from "react-icons/fa";
-import { IoCallOutline } from "react-icons/io5";
-import { MdOutlineMail } from "react-icons/md";
-import { CiLocationOn } from "react-icons/ci";
 import { Heart } from "lucide-react";
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineMail } from "react-icons/md";
+import { IoCallOutline } from "react-icons/io5";
+import { ContextApi } from "../../context/ContextProvider";
+import { FaGithub, FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   const { theme } = useContext(ContextApi);

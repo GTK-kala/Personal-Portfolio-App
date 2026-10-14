@@ -1,5 +1,5 @@
-import { ContextApi } from "../../context/ContextProvider";
 import { useContext } from "react";
+import { ContextApi } from "../../context/ContextProvider";
 
 const Loader = () => {
   const { theme } = useContext(ContextApi);

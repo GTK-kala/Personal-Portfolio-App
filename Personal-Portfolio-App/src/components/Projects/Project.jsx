@@ -1,7 +1,7 @@
-import { ContextApi } from "../../context/ContextProvider";
-import { projects } from "../../assets/Data/Data";
 import { useContext } from "react";
+import { projects } from "../../assets/Data/Data";
 import { ExternalLink, ArrowUpRight } from "lucide-react";
+import { ContextApi } from "../../context/ContextProvider";
 
 const Projects = () => {
   const { theme } = useContext(ContextApi);

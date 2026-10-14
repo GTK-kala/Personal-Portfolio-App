@@ -1,6 +1,6 @@
-import { ContextApi } from "../../context/ContextProvider";
-import { Data } from "../../assets/Data/Data";
 import { useContext } from "react";
+import { Data } from "../../assets/Data/Data";
+import { ContextApi } from "../../context/ContextProvider";
 import { Download, Send, Github, Linkedin, Sparkles } from "lucide-react";
 
 const Hero = () => {
