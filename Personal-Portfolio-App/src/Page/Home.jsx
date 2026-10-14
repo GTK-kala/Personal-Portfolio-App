@@ -11,43 +11,49 @@ import { Toaster } from "react-hot-toast";
 import { useContext } from "react";
 
 const Home = () => {
-   const { theme } = useContext(ContextApi);
+  const { theme } = useContext(ContextApi);
+
   return (
-    <div className={theme ? "light" : "dark"}>
+    <div
+      className={`min-h-screen transition-colors duration-500 ${
+        theme ? "bg-bg" : "bg-darkbg"
+      }`}
+    >
       <NavBar />
-      <Hero />
-      <About />
-      <Skill />
-      <Project />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Skill />
+        <Project />
+        <Contact />
+      </main>
       <Footer />
       <BackToTop />
       <Toaster
         position="top-center"
         toastOptions={{
-          duration: 1000,
-          removeDelay: 1000,
+          duration: 2000,
           style: {
-            background: "rgba(30, 41, 59, 0.8)", // glassy dark-blue background
-            color: "#fff",
-            borderRadius: "12px",
+            background: theme
+              ? "rgba(232, 246, 255, 0.95)"
+              : "rgba(10, 18, 41, 0.95)",
+            color: theme ? "#0B3D91" : "#E8F6FF",
+            borderRadius: "14px",
             padding: "12px 16px",
-            fontSize: "0.95rem",
+            fontSize: "0.9rem",
             backdropFilter: "blur(10px)",
-            border: "1px solid rgba(255,255,255,0.08)",
+            border: theme
+              ? "1px solid rgba(59, 167, 242, 0.2)"
+              : "1px solid rgba(127, 231, 214, 0.2)",
+            boxShadow: theme
+              ? "8px 8px 16px #c5d1e0, -8px -8px 16px #ffffff"
+              : "8px 8px 16px #05091a, -8px -8px 16px #0f1e42",
           },
           success: {
-            duration: 2000,
-            iconTheme: {
-              primary: "#38bdf8",
-              secondary: "#0f172a",
-            },
+            iconTheme: { primary: "#7FE7D6", secondary: "#0B3D91" },
           },
           error: {
-            iconTheme: {
-              primary: "#ef4444",
-              secondary: "#0f172a",
-            },
+            iconTheme: { primary: "#ef4444", secondary: "#0B3D91" },
           },
         }}
       />
