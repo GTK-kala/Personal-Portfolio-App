@@ -1,10 +1,10 @@
+import { techIcons } from "../../assets/Data/Data";
 import { ContextApi } from "../../context/ContextProvider";
 import { useEffect, useRef, useContext, useState } from "react";
-import { techIcons } from "../../assets/Data/Data";
 
 const Skill = () => {
-  const { theme } = useContext(ContextApi);
   const sectionRef = useRef(null);
+  const { theme } = useContext(ContextApi);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

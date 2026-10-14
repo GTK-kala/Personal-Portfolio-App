@@ -1,6 +1,6 @@
-import { ContextApi } from "../../context/ContextProvider";
-import { skill } from "../../assets/Data/Data";
 import { useContext } from "react";
+import { skill } from "../../assets/Data/Data";
+import { ContextApi } from "../../context/ContextProvider";
 import { Award, Briefcase, Users, Clock } from "lucide-react";
 
 const About = () => {

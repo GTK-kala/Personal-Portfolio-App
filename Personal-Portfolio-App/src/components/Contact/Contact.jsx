@@ -1,13 +1,13 @@
-import { ContextApi } from "../../context/ContextProvider";
-import { useState, useContext } from "react";
-import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser";
+import { useState, useContext } from "react";
+import { ContextApi } from "../../context/ContextProvider";
 import { Send, Mail, Phone, MapPin, Loader2 } from "lucide-react";
 
 const Contact = () => {
-  const { theme } = useContext(ContextApi);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const { theme } = useContext(ContextApi);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
