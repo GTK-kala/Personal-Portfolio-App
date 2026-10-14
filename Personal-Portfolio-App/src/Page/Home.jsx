@@ -1,14 +1,14 @@
-import BackToTop from "../components/BackToTop/BackToTop";
-import { ContextApi } from "../context/ContextProvider";
-import Project from "../components/Projects/Project";
-import Contact from "../components/Contact/Contact";
-import NavBar from "../components/NavBar/NavBar";
-import Footer from "../components/Footer/Footer";
-import Skill from "../components/Skills/Skill";
-import About from "../components/About/About";
-import Hero from "../components/Hero/Hero";
-import { Toaster } from "react-hot-toast";
 import { useContext } from "react";
+import { Toaster } from "react-hot-toast";
+import Hero from "../components/Hero/Hero";
+import About from "../components/About/About";
+import Skill from "../components/Skills/Skill";
+import Footer from "../components/Footer/Footer";
+import NavBar from "../components/NavBar/NavBar";
+import Contact from "../components/Contact/Contact";
+import Project from "../components/Projects/Project";
+import { ContextApi } from "../context/ContextProvider";
+import BackToTop from "../components/BackToTop/BackToTop";
 
 const Home = () => {
   const { theme } = useContext(ContextApi);

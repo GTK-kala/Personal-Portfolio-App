@@ -97,7 +97,7 @@ const Hero = () => {
                 { icon: Github, href: "https://github.com/GTK-kala" },
                 {
                   icon: Linkedin,
-                  href: "https://linkedin.com/in/yourusername",
+                  href: "https://linkedin.com/in/khalid-daniel-8662a337b",
                 },
               ].map(({ icon: Icon, href }, i) => (
                 <a
