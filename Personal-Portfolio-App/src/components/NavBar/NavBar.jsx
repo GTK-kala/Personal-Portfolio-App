@@ -1,12 +1,30 @@
-import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, useEffect, useContext } from "react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { ContextApi } from "../../context/ContextProvider";
 
 const Navbar = () => {
+  const { theme, HandleTheme } = useContext(ContextApi);
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("home");
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+
+      const sections = ["home", "about", "skills", "projects", "contact"];
+      const scrollPos = window.scrollY + 100;
+      for (const section of sections) {
+        const el = document.getElementById(section);
+        if (
+          el &&
+          el.offsetTop <= scrollPos &&
+          el.offsetTop + el.offsetHeight > scrollPos
+        ) {
+          setActive(section);
+        }
+      }
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -14,6 +32,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
@@ -22,61 +41,109 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/80 backdrop-blur-lg shadow-soft py-3"
-          : "bg-transparent py-5"
+          ? theme
+            ? "bg-bg/80 backdrop-blur-lg shadow-neu-light-sm py-2"
+            : "bg-darkbg/80 backdrop-blur-lg shadow-neu-dark-sm py-2"
+          : "py-4 bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-x">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center shadow-lg shadow-secondary/30">
-              <span className="text-white font-bold text-lg">Y</span>
+          <a href="#home" className="flex items-center gap-2 group">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-secondary/30 group-hover:scale-110 transition-transform">
+              <span className="text-white font-bold text-lg">K</span>
             </div>
-            <span className="text-xl font-bold text-primary">YourName</span>
+            <span
+              className={`text-xl font-bold hidden sm:block ${
+                theme ? "text-primary" : "text-bg"
+              }`}
+            >
+              Khalid
+            </span>
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-1">
+          <div
+            className={`hidden md:flex items-center gap-1 p-1.5 rounded-full ${
+              theme
+                ? "shadow-neu-light-sm bg-bg"
+                : "shadow-neu-dark-sm bg-darkbg-light"
+            }`}
+          >
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-4 py-2 text-primary-700 hover:text-primary font-medium rounded-full 
-                           hover:bg-secondary-50 transition-all duration-300"
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  active === link.href.slice(1)
+                    ? "bg-gradient-to-r from-primary to-secondary text-white shadow-md"
+                    : theme
+                      ? "text-primary-700 hover:text-primary"
+                      : "text-bg-dark hover:text-bg"
+                }`}
               >
                 {link.name}
               </a>
             ))}
+          </div>
+
+          {/* Right Actions */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={HandleTheme}
+              aria-label="Toggle theme"
+              className={`p-2.5 rounded-full transition-all duration-300 hover:scale-110 ${
+                theme
+                  ? "shadow-neu-light-sm text-primary bg-bg"
+                  : "shadow-neu-dark-sm text-tertiary bg-darkbg-light"
+              }`}
+            >
+              {theme ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
+
             <a
               href="#contact"
-              className="ml-2 px-6 py-2 bg-gradient-to-r from-primary to-secondary text-white 
-                         rounded-full font-medium shadow-md shadow-secondary/30 
-                         hover:shadow-lg hover:shadow-secondary/40 transition-all duration-300 hover:scale-105"
+              className="hidden lg:block px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary shadow-md shadow-secondary/30 hover:shadow-lg hover:scale-105 transition-all"
             >
               Hire Me
             </a>
-          </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-full bg-white shadow-soft text-primary"
-          >
-            {isOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Menu"
+              className={`md:hidden p-2.5 rounded-full ${
+                theme
+                  ? "shadow-neu-light-sm text-primary bg-bg"
+                  : "shadow-neu-dark-sm text-bg bg-darkbg-light"
+              }`}
+            >
+              {isOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 bg-white rounded-2xl shadow-soft-lg p-4 animate-slide-up">
+          <div
+            className={`md:hidden mt-3 p-3 rounded-2xl animate-slide-up ${
+              theme
+                ? "bg-bg shadow-neu-light"
+                : "bg-darkbg-light shadow-neu-dark"
+            }`}
+          >
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 text-primary-700 hover:text-primary hover:bg-secondary-50 
-                           rounded-xl transition-all font-medium"
+                className={`block px-4 py-3 rounded-xl font-medium transition-all mb-1 ${
+                  active === link.href.slice(1)
+                    ? "bg-gradient-to-r from-primary to-secondary text-white"
+                    : theme
+                      ? "text-primary-700 hover:bg-secondary-50"
+                      : "text-bg-dark hover:bg-darkbg"
+                }`}
               >
                 {link.name}
               </a>
