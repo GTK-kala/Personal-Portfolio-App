@@ -43,8 +43,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+251 909 100 754",
-      href: "tel:+251909100754",
+      value: "+251 910 090 754",
+      href: "tel:+251910090754",
     },
     {
       icon: MapPin,
@@ -79,9 +79,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
           {/* Left - Info */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="space-y-6 lg:col-span-2">
             <div
               className={`p-6 sm:p-8 rounded-3xl relative overflow-hidden ${
                 theme
@@ -89,14 +89,14 @@ const Contact = () => {
                   : "bg-gradient-to-br from-secondary to-primary text-white shadow-neu-dark"
               }`}
             >
-              <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-20 translate-x-20" />
-              <div className="absolute bottom-0 left-0 w-32 h-32 bg-tertiary/20 rounded-full translate-y-16 -translate-x-16" />
+              <div className="absolute top-0 right-0 w-40 h-40 translate-x-20 -translate-y-20 rounded-full bg-white/10" />
+              <div className="absolute bottom-0 left-0 w-32 h-32 -translate-x-16 translate-y-16 rounded-full bg-tertiary/20" />
 
               <div className="relative">
-                <h3 className="text-xl sm:text-2xl font-bold mb-2">
+                <h3 className="mb-2 text-xl font-bold sm:text-2xl">
                   Let's talk
                 </h3>
-                <p className="text-white/80 mb-6 text-sm">
+                <p className="mb-6 text-sm text-white/80">
                   I'm always open to discussing new projects, creative ideas or
                   opportunities.
                 </p>
@@ -115,7 +115,7 @@ const Contact = () => {
                         <p className="text-[10px] sm:text-xs text-white/70">
                           {label}
                         </p>
-                        <p className="font-medium text-sm truncate group-hover:text-tertiary transition-colors">
+                        <p className="text-sm font-medium truncate transition-colors group-hover:text-tertiary">
                           {value}
                         </p>
                       </div>
@@ -133,7 +133,7 @@ const Contact = () => {
                   : "bg-darkbg shadow-neu-dark-sm"
               }`}
             >
-              <div className="w-3 h-3 bg-tertiary-500 rounded-full animate-pulse flex-shrink-0" />
+              <div className="flex-shrink-0 w-3 h-3 rounded-full bg-tertiary-500 animate-pulse" />
               <div>
                 <p
                   className={`font-semibold text-sm ${
@@ -160,7 +160,7 @@ const Contact = () => {
               theme ? "bg-bg shadow-neu-light" : "bg-darkbg shadow-neu-dark"
             }`}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               <div>
                 <label
                   className={`block text-xs sm:text-sm font-semibold mb-2 ${
@@ -221,7 +221,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full neu-btn-primary inline-flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="inline-flex items-center justify-center w-full gap-2 neu-btn-primary disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <>

@@ -20,7 +20,7 @@ const Footer = () => {
     {
       icon: IoCallOutline,
       label: "Call",
-      value: "+251 909 100 754",
+      value: "+251 910 090 754",
     },
     {
       icon: MdOutlineMail,
@@ -38,20 +38,20 @@ const Footer = () => {
       }`}
     >
       {/* Decorative blobs */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-secondary/20 rounded-full filter blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-tertiary/10 rounded-full filter blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 rounded-full pointer-events-none w-72 h-72 bg-secondary/20 filter blur-3xl" />
+      <div className="absolute bottom-0 left-0 rounded-full pointer-events-none w-72 h-72 bg-tertiary/10 filter blur-3xl" />
 
-      <div className="container-x relative">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12">
+      <div className="relative container-x">
+        <div className="grid grid-cols-1 gap-10 pb-12 md:grid-cols-3">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur flex items-center justify-center">
-                <span className="font-bold text-lg">K</span>
+              <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/10 backdrop-blur">
+                <span className="text-lg font-bold">K</span>
               </div>
               <span className="text-xl font-bold">Khalid</span>
             </div>
-            <p className="text-white/70 text-sm leading-relaxed max-w-xs">
+            <p className="max-w-xs text-sm leading-relaxed text-white/70">
               Full-stack developer crafting modern and scalable web solutions
               with clean code and beautiful design.
             </p>
@@ -59,13 +59,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="mb-4 font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className="text-white/70 hover:text-tertiary transition-colors text-sm inline-block hover:translate-x-1 duration-200"
+                    className="inline-block text-sm transition-colors duration-200 text-white/70 hover:text-tertiary hover:translate-x-1"
                   >
                     → {item}
                   </a>
@@ -76,7 +76,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="mb-4 font-semibold">Contact</h4>
             <div className="flex gap-3 mb-5">
               <a
                 href="https://github.com/GTK-kala"
@@ -113,8 +113,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="py-6 border-t border-white/10 text-center">
-          <p className="text-white/70 text-sm flex items-center justify-center gap-2 flex-wrap">
+        <div className="py-6 text-center border-t border-white/10">
+          <p className="flex flex-wrap items-center justify-center gap-2 text-sm text-white/70">
             Made with{" "}
             <Heart
               className="text-tertiary fill-tertiary animate-pulse"
@@ -122,7 +122,7 @@ const Footer = () => {
             />{" "}
             by Khalid
           </p>
-          <p className="text-white/40 text-xs mt-2">
+          <p className="mt-2 text-xs text-white/40">
             © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>

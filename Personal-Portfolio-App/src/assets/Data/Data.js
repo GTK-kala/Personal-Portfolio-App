@@ -1,8 +1,8 @@
 import Profile from "../Images/profile.jpg";
 
 export const Data = {
-  name: "Khalid",
-  role: "Frontend Developer",
+  name: "Khalid Daniel",
+  role: "Full Stack Developer",
   profileImage: Profile,
   resumeLink: "/resume.pdf",
 };
@@ -20,6 +20,11 @@ export const skill = [
   "GitHub",
   "VSCode",
   "Next.js",
+  "Express.js",
+  "Java",
+  "C++",
+  "Python",
+  "C#",
 ];
 
 export const techIcons = [
@@ -105,10 +110,10 @@ export const projects = [
     link: "https://github.com/GTK-kala/Secure-notes-App.git",
   },
   {
-    title: "Weather App",
-    desc: "Real-time weather forecasting app using API integration.",
-    tech: "React • Weather API",
-    link: "https://github.com/GTK-kala/React-Weather-App.git",
+    title: "Library Management System",
+    desc: "A comprehensive library management system with book tracking and user management.",
+    tech: "React • Node.js • MySQL",
+    link: "https://github.com/GTK-kala/library-management-system.git",
   },
   {
     title: "Full-Stack Food Delivery App",
@@ -129,9 +134,9 @@ export const projects = [
     link: "#",
   },
   {
-    title: "Portfolio Website",
-    desc: "Animated personal portfolio with React and CSS.",
-    tech: "React • CSS",
-    link: "https://github.com/GTK-kala/Personal-Portfolio-App.git",
+    title: "Academic Management Platform",
+    desc: "Academic Management Platform for managing student records, courses, and grades.",
+    tech: "React • CSS • Node.js • MySQL",
+    link: "https://github.com/GTK-kala/Academic-Management-Platform.git",
   },
 ];
